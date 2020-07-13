@@ -1,7 +1,7 @@
 # Choogle
 
   ## Description
-  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will also be able to asscess articles through W3 Schools API and GitHub API??
+  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will also be able to access articles through W3 Schools API and GitHub API and store into their own user database for easy and quick reference in one convenient location.
 
   Link to deployed application: Coming soon...
 
@@ -17,7 +17,7 @@
 
   ## Built With
   * HTML
-  * CSS
+  * CSS/Materialize
   * JavaScript
   * React.js
   * MongoDB
