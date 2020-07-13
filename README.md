@@ -20,10 +20,10 @@
   * CSS
   * JavaScript
   * React.js
-  * MySQL/MongoDB
+  * MongoDB
   * JQuery
   * Node.js
-  * Express, Passport, Helmet, MySql2, bcryptjs, Sequelize/Mongoose packages
+  * Express, Passport, bcryptjs, Mongoose packages
 
   ## User Story
   As a Developer
