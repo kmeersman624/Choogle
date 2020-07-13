@@ -40,7 +40,7 @@
 
   ## Images
 
-  ![image of logo](/public/images/chooglelogo.png)
+  ![image of logo](/client/src/images/chooglelogo.png)
   ![image of xd rendering](/public/images/)
 
   ## Video
