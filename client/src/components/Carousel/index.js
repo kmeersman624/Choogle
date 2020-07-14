@@ -1,12 +1,12 @@
 import React from 'react'
 import {Carousel} from "react-materialize";
-import Resources from "../Card"
+
 export default function Slider(){
 return(
 <Carousel
   carouselId="Carousel-2"
   images={[
-    <Resources/>,
+    'https://picsum.photos/200/300?image=0',
     'https://picsum.photos/200/300?image=1',
     'https://picsum.photos/200/300?image=2',
     'https://picsum.photos/200/300?image=3',
