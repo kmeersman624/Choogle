@@ -1377,6 +1377,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+materialize-css@^1.0.0-rc.2:
+  version "1.0.0-rc.2"
+  resolved "https://registry.yarnpkg.com/materialize-css/-/materialize-css-1.0.0-rc.2.tgz#b9e6b18f698c6ef77bb6b628d59147faf131eff5"
+  integrity sha512-FuQmSyq4Qv0ov7A2qXw0E6/jbQzSWx2P1pg2/XQDYTkkSc/GyiFAxu3fw9zgShwuTvyumEiw5jkxQWT9siqMBQ==
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -1937,6 +1942,13 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-materialize@^3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-3.9.2.tgz#dab18c7b0c34964b8ac4fe41e54c3107dac87145"
+  integrity sha512-6Km62FMXmpoIDOYMZXth3yPeyYZMN1P6duo1pKTHOdHUYdzI9ua4PbGJUbUC/BiVmm4lHPV5uI96tv3toRND6Q==
+  dependencies:
+    classnames "^2.2.6"
 
 react-overlays@^4.0.0:
   version "4.0.0"
