@@ -15,9 +15,9 @@ function App() {
     <Router>
       <Route exact path="/">
         <Header/>
+        <SignInModal/>
         <Home />
         <Slider/>
-        <SignInModal/>
         <SidePiece/>
       </Route>
       <Route exact path="/about"></Route>

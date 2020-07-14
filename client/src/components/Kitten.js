@@ -5,7 +5,7 @@ import Button from "react-materialize";
 function Kitten({ sleepy, name, onClick }) {
   return (
     <div>
-      <h2>{name}</h2>
+      <h2>{}</h2>
       <Button  onClick={onClick}/>
     </div>
   );
