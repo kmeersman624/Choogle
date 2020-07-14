@@ -1,27 +1,28 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Header from "./components/Header"
-import Slider from "./components/Carousel"
-import SignInModal from "./components/Modal"
+import Header from "./components/Header/index"
 // Styles
 import "./App.css";
 
 // Pages
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
     <Router>
-      <Route exact path="/">
-        <Header/>
-        <SignInModal/>
-        <Home />
-        <Slider/>
-      </Route>
-      <Route exact path="/about"></Route>
-      <Route exact path="/contact"></Route>
+      <div>
+      <Header/>
+      
+      <Route exact path="/" component={Home} />
+      {/* <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} /> */}
+      
+      </div>
     </Router>
   );
 }
 
 export default App;
+

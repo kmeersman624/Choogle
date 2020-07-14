@@ -2,7 +2,7 @@ import React from 'react'
 import SideComponent from '../SideComponent'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
 import logo from '../../images/chooglelogo.png'
-import '../Header/style.css'
+import './style.css'
 
 export default function Header() {
     return (
