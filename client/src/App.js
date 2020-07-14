@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"
+import Header from "./components/Header"
 import Slider from "./components/Carousel"
 // Styles
 import "./App.css";
@@ -12,6 +12,7 @@ function App() {
   return (
     <Router>
       <Route exact path="/">
+        <Header/>
         <Home />
         <Slider/>
       </Route>
