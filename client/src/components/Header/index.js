@@ -74,13 +74,13 @@ export default function Header() {
                         
                         <SideNavItem divider />
                         <SideNavItem subheader>
-                            Saved Links
+                            Resources
                         </SideNavItem>
                         <SideNavItem
                             href="#!third"
                             waves
                         >
-                            resources
+                            Saved Links
                     </SideNavItem>
                     </SideNav>
                 </NavItem>

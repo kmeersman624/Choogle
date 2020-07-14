@@ -26,7 +26,7 @@
     background-image: url("../../images/chooglelogo.png")
     !important;
     height: 100%;
-    background-position: right;
+    background-position: left;
     background-size: cover;
     background-size: contain ;
     background-repeat: no-repeat;
@@ -38,9 +38,15 @@
 .white-text.name{
     color: black
     !important;
+    margin-left: 110px;
+    font-size: large
+    !important;
 }
 
 .white-text.email{
     color: black
+    !important;
+    margin-left: 100px;
+    font-size: medium
     !important;
 }
