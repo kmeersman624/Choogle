@@ -21,3 +21,26 @@
     margin-top: 5px
     !important;
 }
+
+.user-view{
+    background-image: url("../../images/chooglelogo.png")
+    !important;
+    height: 100%;
+    background-position: right;
+    background-size: cover;
+    background-size: contain ;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+}
+
+.white-text.name{
+    color: black
+    !important;
+}
+
+.white-text.email{
+    color: black
+    !important;
+}
