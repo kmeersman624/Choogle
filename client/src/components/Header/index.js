@@ -1,4 +1,5 @@
 import React from 'react'
+import SideComponent from '../SideComponent'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
 import logo from '../../images/chooglelogo.png'
 import '../Header/style.css'
@@ -42,47 +43,7 @@ export default function Header() {
                     />
                 </NavItem>
                 <NavItem href="">
-                    <SideNav
-                        id="SideNav-10"
-                        options={{
-                            draggable: true,
-                            edge: "right"
-                        }}
-                        trigger={
-                            <Button
-                        className="btn-large green notesBtn"
-                        floating
-                        icon={<Icon className="fontSize">Notes</Icon>}
-                        node="button"
-                    />
-                        }
-                    >
-                        <SideNavItem
-                            user={{
-                                background: '',
-                                
-                                name: 'John Doe',
-                                email: 'jdandturk@gmail.com'
-                            }}
-                            userView
-                        />
-                        <SideNavItem
-                            
-                        >
-                           Saved Notes
-                        </SideNavItem>
-                        
-                        <SideNavItem divider />
-                        <SideNavItem subheader>
-                            Resources
-                        </SideNavItem>
-                        <SideNavItem
-                            href="#!third"
-                            waves
-                        >
-                            Saved Links
-                    </SideNavItem>
-                    </SideNav>
+                    <SideComponent/>
                 </NavItem>
                 <NavItem href="">
                     <Button
