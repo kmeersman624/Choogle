@@ -6,9 +6,7 @@ function Kitten({ sleepy, name, onClick }) {
   return (
     <div>
       <h2>{name}</h2>
-      <Button  onClick={onClick}>
-        
-      </Button>
+      <Button  onClick={onClick}/>
     </div>
   );
 }
