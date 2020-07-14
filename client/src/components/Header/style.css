@@ -12,3 +12,12 @@
     margin-left: 20px;
     margin-top: 2px;
 }
+
+.notesBtn {
+    margin-right: 0
+    !important;
+    margin-left: 0 
+    !important;
+    margin-top: 5px
+    !important;
+}
