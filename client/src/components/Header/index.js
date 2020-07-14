@@ -45,7 +45,8 @@ export default function Header() {
                     <SideNav
                         id="SideNav-10"
                         options={{
-                            draggable: true
+                            draggable: true,
+                            edge: "right"
                         }}
                         trigger={
                             <Button
@@ -58,31 +59,28 @@ export default function Header() {
                     >
                         <SideNavItem
                             user={{
-                                background: 'https://placeimg.com/640/480/tech',
-                                email: 'jdandturk@gmail.com',
-                                image: 'static/media/react-materialize-logo.824c6ea3.svg',
-                                name: 'John Doe'
+                                background: '',
+                                
+                                name: 'John Doe',
+                                email: 'jdandturk@gmail.com'
                             }}
                             userView
                         />
                         <SideNavItem
-                            href="#!icon"
-                            icon={<Icon>cloud</Icon>}
+                            
                         >
-                            First Link With Icon
+                           Saved Notes
                         </SideNavItem>
-                        <SideNavItem href="#!second">
-                            Second Link
-                        </SideNavItem>
+                        
                         <SideNavItem divider />
                         <SideNavItem subheader>
-                            Subheader
+                            Saved Links
                         </SideNavItem>
                         <SideNavItem
                             href="#!third"
                             waves
                         >
-                            Third Link With Waves
+                            resources
                     </SideNavItem>
                     </SideNav>
                 </NavItem>
