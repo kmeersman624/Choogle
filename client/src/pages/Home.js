@@ -31,7 +31,7 @@ function Home() {
     <Container>
       <Row>
         <Col md={6}>
-          <h1>Sleepy Kittens</h1>
+          <h1></h1>
           {kittens
             .filter((kitten) => kitten.sleepy)
             .map((kitten) => (
@@ -39,7 +39,7 @@ function Home() {
             ))}
         </Col>
         <Col md={6}>
-          <h1>Non Sleepy Kittens</h1>
+          <h1></h1>
           {kittens
             .filter((kitten) => !kitten.sleepy)
             .map((kitten) => (

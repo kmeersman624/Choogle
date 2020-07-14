@@ -14,9 +14,9 @@ function App() {
   return (
     <Router>
       <Route exact path="/">
+        <SignInModal/>
         <Home />
         <Slider/>
-        <SignInModal/>
         <SidePiece/>
       </Route>
       <Route exact path="/about"></Route>
