@@ -3,11 +3,12 @@
   ## Description
   User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will also be able to access articles through W3 Schools API and GitHub API and store into their own user database for easy and quick reference in one convenient location.
 
-  Link to deployed application: Coming soon...
+  Link to deployed application: https://chooglefoo.herokuapp.com/
 
   ![GitHub repo size](https://img.shields.io/github/repo-size/kmeersman624/Choogle)
 
   ## Table of Contents
+  * [Proposal](#proposal)
   * [Usage](#usage)
   * [Images](#images)
   * [License](#license)
@@ -25,6 +26,9 @@
   * Node.js
   * Express, Passport, bcryptjs, Mongoose packages
 
+  ## Proposal
+  View our proposal for Choogle: https://docs.google.com/document/d/1NOvqD2pX30HPfyAERAev6cQqq3fbbZy4Xki1t8Y42Ps/edit#
+
   ## User Story
   As a Developer
   I WANT to be able to easily access documents and code resources in one location
@@ -41,7 +45,6 @@
   ## Images
 
   ![image of logo](/client/src/images/chooglelogo.png)
-  ![image of xd rendering](/public/images/)
 
   ## Video
     Coming Soon...
