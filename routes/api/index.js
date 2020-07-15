@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-// /api/kittens
-router.use("/kittens", require("./kittens"));
+// /api/user
+router.use("/users", require("./users"));
 
 module.exports = router;
