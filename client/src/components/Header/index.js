@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import SideComponent from '../SideComponent'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
 import logo from '../../images/chooglelogo.png'
 import './style.css'
@@ -9,7 +8,7 @@ export default function Header() {
     return (
         <>
             <Navbar
-                className="white  z-depth-5"
+                className="white z-depth-5"
                 alignLinks="right"
                 brand={<Link to="/"><a className="brand-logo logoMargin" href="#"><img src={logo} height="60px" width="auto" alt="" /></a></Link>}
                 id="mobile-nav"
@@ -48,8 +47,8 @@ export default function Header() {
                     </Link>
                 </NavItem>
                 <NavItem href="">
-
                     <SideNav
+                        className="sideNavWidth"
                         id="SideNav-10"
                         options={{
                             draggable: true,
