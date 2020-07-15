@@ -52,8 +52,13 @@
 }
 
 .marginBottom {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 .inputMargin {
   margin-top: 20px !important;
+}
+
+.verticalAlignItems {
+  display: flex;
+  align-items: center;
 }

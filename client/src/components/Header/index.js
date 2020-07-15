@@ -34,7 +34,7 @@ export default function Header() {
                         <Button
                             className="btn-large yellow"
                             floating
-                            icon={<Icon className="fontSize  black-text">Home</Icon>}
+                            icon={<Icon className="fontSize black-text">Home</Icon>}
                             large
                             node="button"
                         />
@@ -70,22 +70,26 @@ export default function Header() {
                         <SideNavItem className="col s12 center-align">
                             <img src={welcome} height="50px" />
                         </SideNavItem>
-                        <SideNavItem className="col s12">
-                            <div className="row">
-                                <div className="col s6 left-align">
-                                    <img src={logo} height="200px" />
-                                </div>
-                                <div className="col s6">
-                                    <div className="row">
-                                        <div className="col s12">Username: Choogle Foo</div>
-                                        <div className="col s12">Email: chooglefoo@gmail.com</div>
+                        <div className="row">
+                            <SideNavItem className="col s12">
+                                <div className="row">
+                                    <div className="col s6 left-align">
+                                        <img src={logo} height="200px" />
+                                    </div>
+                                    <div className="col s6">
+                                        <div className="row">
+                                            <div className="col s12 marginTop">Username: Choogle Foo</div>
+                                            <div className="col s12">Email: chooglefoo@gmail.com</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </SideNavItem>
-                        <SideNavItem>
-                            <h2 classname="row">Notes:</h2>
-                        </SideNavItem>
+                            </SideNavItem>
+                        </div>
+                        <div className="row">
+                            <SideNavItem>
+                                <h2>Notes:</h2>
+                            </SideNavItem>
+                        </div>
                         <SideNavItem divider />
                         <SideNavItem subheader>
                             <h3 className="col s12">Resources:</h3>
