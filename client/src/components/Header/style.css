@@ -62,3 +62,8 @@
   display: flex;
   align-items: center;
 }
+.signUP {
+    background-image: url("../../images/SignInLink.png");
+    width: "20px";
+    height: "auto"
+}

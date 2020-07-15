@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem, TextInput } from 'react-materialize'
-import logo from '../../images/chooglelogo.png'
+import logo from '../../images/Choogle.png'
 import welcome from '../../images/welcome.png'
 import save from '../../images/save.png'
 import del from '../../images/delete.png'
@@ -123,9 +123,9 @@ export default function Header() {
                 </NavItem>
                 <NavItem href="">
                     <Button
-                        className="btn-large yellow"
+                        className="signUP"
                         floating
-                        icon={<Icon className="fontSize black-text">Login</Icon>}
+                        icon={<Icon className="fontSizeContact">Login</Icon>}
                         node="button"
                     />
                 </NavItem>

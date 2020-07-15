@@ -9,6 +9,7 @@ main {
 }
 
 .page-footer {
+  margin-top: 100px;
   padding-top: 0 !important;
   height: 70px;
   bottom: 0;

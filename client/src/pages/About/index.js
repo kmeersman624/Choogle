@@ -7,46 +7,89 @@ import dan from "../../images/danny.jpeg";
 import kate from "../../images/kate.jpeg";
 import marc from "../../images/marcus.jpeg";
 import mike from "../../images/mike.png";
-import { Chip } from "react-materialize";
+import mtname from "../../images/mtname.png";
+import DanName from "../../images/DanName.png";
+import KateName from "../../images/KateName.png";
+import MikeName from "../../images/MikeName.png";
+// import { Chip } from "react-materialize";
+
+import './about.css'
 
 function About() {
   return (
     <div>
-      <div className="row">
-        <div className="col s12">
-          <div className="card-panel">
-            <span className="centerabout">
-              <img className="aboutHeader" src={about} />
-              <img className="aboutHeader" src={choogle} />
-            </span>
-          </div>
-        </div>
+      <div className="row center">
+        <span><img className="aboutHeader aboutChoogle" src={about} /></span>
+      </div>
+      <div className="row center">
+        <p>Here at Choogle, we wanted to bring our users.</p>
       </div>
       <div className="row">
-        <div className="col s12 m3">
-          <img className="responsive-img circle" src={dan} />
-          <Chip>Daniel Molina-Power</Chip>
-          <img className="octo" src={github} />
-          <img src={linkedin} />
+      <div class="col xs12 s6 m=6 l3">
+          <div class="card large">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src={dan}></img>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={DanName}></img><i class="material-icons right">more</i></span>
+                <p><a href="#">Linkedin</a></p>
+                <p><a href="#">Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><img class="cardName" src={DanName}></img><i class="material-icons right">X</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+          </div>
         </div>
-        <div className="col s12 m3">
-          <img className="responsive-img circle" src={kate} />
-          <Chip>Kate Meersman</Chip>
-          <img className="octo" src={github} />
-          <img src={linkedin} />
+        <div class="col xs12 s6 m=6 l3">
+          <div class="card large">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src={kate}></img>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={KateName}></img><i class="material-icons right">more</i></span>
+                <p><a href="#">Linkedin</a></p>
+                <p><a href="#">Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><img class="cardName" src={KateName}></img><i class="material-icons right">X</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+          </div>
         </div>
-        <div className="col s12 m3">
-          <img className="responsive-img circle" src={mike} />
-          <Chip>Mike Zlotkowski</Chip>
-          <img className="octo" src={github} />
-          <img src={linkedin} />
+        <div class="col xs12 s6 m=6 l3">
+          <div class="card large">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src={mike}></img>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={MikeName}></img><i class="material-icons right">more</i></span>
+                <p><a href="#">Linkedin</a></p>
+                <p><a href="#">Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><img class="cardName" src={MikeName}></img><i class="material-icons right">X</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+          </div>
         </div>
-        <div className="col s12 m3">
-          <img className="responsive-img circle" src={marc} />
-          <Chip>Marcus Travis</Chip>
-          <img className="octo" src={github} />
-          <img src={linkedin} />
+        <div class="col xs12 s6 m=6 l3">
+          <div class="card large round">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src={marc}></img>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={mtname}></img><i class="material-icons right">more</i></span>
+                <p><a href="#">Linkedin</a></p>
+                <p><a href="#">Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><img class="cardName" src={mtname}></img><i class="material-icons right">X</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+          </div>
         </div>
+          
       </div>
     </div>
   );
