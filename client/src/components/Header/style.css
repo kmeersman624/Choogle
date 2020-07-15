@@ -18,7 +18,6 @@
 }
 
 .user-view {
-  background-image: url("../../images/chooglelogo.png") !important;
   height: 100%;
   background-position: left;
   background-size: cover;
@@ -42,4 +41,16 @@
 
 .sideNavWidth {
   width: 700px !important;
+}
+
+.marginRight {
+  margin-right: 20px;
+}
+
+.marginTop {
+  margin-top: 50px;
+}
+
+.inputMargin {
+  margin-top: 20px !important;
 }

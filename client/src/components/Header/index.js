@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
+import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem, TextInput } from 'react-materialize'
 import logo from '../../images/chooglelogo.png'
+import welcome from '../../images/welcome.png'
+import save from '../../images/save.png'
+import del from '../../images/delete.png'
+import update from '../../images/update.png'
 import './style.css'
 
 export default function Header() {
@@ -56,40 +60,53 @@ export default function Header() {
                         }}
                         trigger={
                             <Button
-                        className="btn-large green notesBtn"
-                        floating
-                        icon={<Icon className="fontSize">Notes</Icon>}
-                        node="button"
-                    />
+                                className="btn-large green notesBtn"
+                                floating
+                                icon={<Icon className="fontSize">Notes</Icon>}
+                                node="button"
+                            />
                         }
                     >
+                        <SideNavItem className="col s12 center-align">
+                            <img src={welcome} height="50px" className="left-align"/>
+                        </SideNavItem>
+                        <SideNavItem className="col s6 center-align">
+                            <img src={logo} height="200px" className="center-align"/>
+                        </SideNavItem>
                         <SideNavItem
+                            className="col s6"
                             user={{
                                 background: '',
-                                
                                 name: 'Foo Choogle',
                                 email: 'jdandturk@gmail.com'
                             }}
                             userView
-                        />
-                        <SideNavItem
-                            
                         >
-                            Notes
                         </SideNavItem>
-                        
+                        <SideNavItem
+                        >
+                            <h2>Notes:</h2>
+                        </SideNavItem>
                         <SideNavItem divider />
                         <SideNavItem subheader>
-                            Resources
+                            <h3 className="col s12">Resources:</h3>
                         </SideNavItem>
-                        <SideNavItem
-                            href="#!third"
-                            waves
-                        >
-                            Saved Links
-                    </SideNavItem>
+                        <SideNavItem className="inputMargin">
+                            <TextInput id="TextInput-5" placeholder="Type or paste resources to save here!" className="" />
+                        </SideNavItem>
+                        <SideNavItem>
+                            <img src={save} height="40px" className="marginRight" /><img src={update} height="40px" className="marginRight" /><img src={del} height="40px" className="marginRight" />
+                        </SideNavItem>
+                        <SideNavItem subheader className="marginTop">
+                            <h3 className="col s12">Saved Links:</h3>
+                        </SideNavItem>
+                        <SideNavItem className="inputMargin">
+                            <TextInput id="TextInput-4" placeholder="Type or paste Links to save here!" className="" />
+                        </SideNavItem>
+                        <SideNavItem>
+                            <img src={save} height="40px" className="marginRight" /><img src={update} height="40px" className="marginRight" /><img src={del} height="40px" className="marginRight" />
+                        </SideNavItem>
                     </SideNav>
-
                 </NavItem>
                 <NavItem href="">
                     <Link to="/contact">
