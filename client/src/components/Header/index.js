@@ -61,7 +61,7 @@ export default function Header() {
                             user={{
                                 background: '',
                                 
-                                name: 'John Doe',
+                                name: 'Foo Choogle',
                                 email: 'jdandturk@gmail.com'
                             }}
                             userView
@@ -69,7 +69,7 @@ export default function Header() {
                         <SideNavItem
                             
                         >
-                           Saved Notes
+                            Notes
                         </SideNavItem>
                         
                         <SideNavItem divider />
