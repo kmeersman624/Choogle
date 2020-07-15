@@ -50,3 +50,8 @@
     font-size: medium
     !important;
 }
+.signUP {
+    background-image: url("../../images/SignInLink.png");
+    width: "20px";
+    height: "auto"
+}

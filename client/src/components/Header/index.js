@@ -1,7 +1,8 @@
 import React from 'react'
 import SideComponent from '../SideComponent'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
-import logo from '../../images/chooglelogo.png'
+import logo from '../../images/Choogle.png'
+// import SignInLink from '../../images/SignInLink.png'
 import '../Header/style.css'
 
 export default function Header() {
@@ -27,18 +28,20 @@ export default function Header() {
             >
                 <NavItem href="">
                     <Button
-                        className="btn-large yellow"
-                        floating
-                        icon={<Icon className="fontSize  black-text">Home</Icon>}
-                        large
-                        node="button"
+                        // className="btn-large yellow"
+                        // floating
+                        // image="../images/SignInLink.png"
+                        // icon={<Icon className="fontSize  black-text">Home</Icon>}
+                        // large
+                        // node="button"
+                        img class="active" src="HomeLink.png" alt="home" width="20px" height="auto"
                     />
                 </NavItem>
                 <NavItem href="">
                     <Button
                         className="btn-large red"
                         floating
-                        icon={<Icon className="fontSize">About</Icon>}
+                        icon={<Icon className="fontSizeContact">Contact</Icon>}
                         node="button"
                     />
                 </NavItem>
@@ -55,9 +58,9 @@ export default function Header() {
                 </NavItem>
                 <NavItem href="">
                     <Button
-                        className="btn-large yellow"
+                        className="signUP"
                         floating
-                        icon={<Icon className="fontSize black-text">Login</Icon>}
+                        icon={<Icon className="fontSizeContact">Login</Icon>}
                         node="button"
                     />
                 </NavItem>
