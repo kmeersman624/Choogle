@@ -1,4 +1,5 @@
 import React from 'react'
+import SideComponent from '../SideComponent'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
 import logo from '../../images/chooglelogo.png'
 import './style.css'
@@ -42,6 +43,7 @@ export default function Header() {
                     />
                 </NavItem>
                 <NavItem href="">
+
                     <SideNav
                         id="SideNav-10"
                         options={{
@@ -83,6 +85,7 @@ export default function Header() {
                             Saved Links
                     </SideNavItem>
                     </SideNav>
+
                 </NavItem>
                 <NavItem href="">
                     <Button
