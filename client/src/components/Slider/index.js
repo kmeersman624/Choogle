@@ -1,6 +1,6 @@
 import React from 'react'
 import {Carousel} from "react-materialize";
-import "../Carousel/styles.css"
+import "./styles.css"
 
 export default function Slider(){
 return(

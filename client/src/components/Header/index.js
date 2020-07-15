@@ -43,7 +43,49 @@ export default function Header() {
                     />
                 </NavItem>
                 <NavItem href="">
-                    <SideComponent/>
+
+                    <SideNav
+                        id="SideNav-10"
+                        options={{
+                            draggable: true,
+                            edge: "right"
+                        }}
+                        trigger={
+                            <Button
+                        className="btn-large green notesBtn"
+                        floating
+                        icon={<Icon className="fontSize">Notes</Icon>}
+                        node="button"
+                    />
+                        }
+                    >
+                        <SideNavItem
+                            user={{
+                                background: '',
+                                
+                                name: 'Foo Choogle',
+                                email: 'jdandturk@gmail.com'
+                            }}
+                            userView
+                        />
+                        <SideNavItem
+                            
+                        >
+                            Notes
+                        </SideNavItem>
+                        
+                        <SideNavItem divider />
+                        <SideNavItem subheader>
+                            Resources
+                        </SideNavItem>
+                        <SideNavItem
+                            href="#!third"
+                            waves
+                        >
+                            Saved Links
+                    </SideNavItem>
+                    </SideNav>
+
                 </NavItem>
                 <NavItem href="">
                     <Button
