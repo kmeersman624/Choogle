@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import SideComponent from '../SideComponent'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
 import logo from '../../images/chooglelogo.png'
@@ -26,21 +27,25 @@ export default function Header() {
                 }}
             >
                 <NavItem href="">
-                    <Button
-                        className="btn-large yellow"
-                        floating
-                        icon={<Icon className="fontSize  black-text">Home</Icon>}
-                        large
-                        node="button"
-                    />
+                    <Link to="/">
+                        <Button
+                            className="btn-large yellow"
+                            floating
+                            icon={<Icon className="fontSize  black-text">Home</Icon>}
+                            large
+                            node="button"
+                        />
+                    </Link>
                 </NavItem>
                 <NavItem href="">
-                    <Button
-                        className="btn-large red"
-                        floating
-                        icon={<Icon className="fontSize">About</Icon>}
-                        node="button"
-                    />
+                    <Link to="/about">
+                        <Button
+                            className="btn-large red"
+                            floating
+                            icon={<Icon className="fontSize">About</Icon>}
+                            node="button"
+                        />
+                    </Link>
                 </NavItem>
                 <NavItem href="">
 
@@ -88,12 +93,14 @@ export default function Header() {
 
                 </NavItem>
                 <NavItem href="">
-                    <Button
-                        className="btn-large blue"
-                        floating
-                        icon={<Icon className="fontSizeContact">Contact</Icon>}
-                        node="button"
-                    />
+                    <Link to="/contact">
+                        <Button
+                            className="btn-large blue"
+                            floating
+                            icon={<Icon className="fontSizeContact">Contact</Icon>}
+                            node="button"
+                        />
+                    </Link>
                 </NavItem>
                 <NavItem href="">
                     <Button

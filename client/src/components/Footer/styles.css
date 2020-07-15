@@ -9,8 +9,7 @@ main {
 }
 
 .page-footer {
-  padding-top: 0
-  !important;
+  padding-top: 0 !important;
   height: 70px;
   bottom: 0;
   position: fixed;
@@ -18,17 +17,15 @@ main {
   background-color: white;
 }
 
-.footerlogo{
-    position: fixed;
-    left: 0;
-    margin-left: 20px;
-    margin-top: 8px;
+.footerlogo {
+  position: fixed;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 8px;
 }
 
-.footer-copyright{
-   color: black
-   !important;
-    text-align: center;
-    background-color: white
-    !important;
+.footer-copyright {
+  color: black !important;
+  text-align: center;
+  background-color: white !important;
 }
