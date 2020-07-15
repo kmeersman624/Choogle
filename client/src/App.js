@@ -17,7 +17,6 @@ function App() {
     <Router>
       <div>
         <Header />
-
         <Route exact path="/" component={Home} />
         <main></main>
         <Route exact path="/about" component={About} />
