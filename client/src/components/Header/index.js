@@ -11,7 +11,7 @@ export default function Header() {
             <Navbar
                 className="white  z-depth-5"
                 alignLinks="right"
-                brand={<a className="brand-logo logoMargin" href="#"><img src={logo} height="60px" width="auto" alt="" /></a>}
+                brand={<Link to="/"><a className="brand-logo logoMargin" href="#"><img src={logo} height="60px" width="auto" alt="" /></a></Link>}
                 id="mobile-nav"
                 menuIcon={<Icon>menu</Icon>}
                 options={{
