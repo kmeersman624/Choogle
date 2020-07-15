@@ -68,24 +68,23 @@ export default function Header() {
                         }
                     >
                         <SideNavItem className="col s12 center-align">
-                            <img src={welcome} height="50px" className="left-align"/>
+                            <img src={welcome} height="50px" />
                         </SideNavItem>
-                        <SideNavItem className="col s6 center-align">
-                            <img src={logo} height="200px" className="center-align"/>
+                        <SideNavItem className="col s12">
+                            <div className="row">
+                                <div className="col s6 left-align">
+                                    <img src={logo} height="200px" />
+                                </div>
+                                <div className="col s6">
+                                    <div className="row">
+                                        <div className="col s12">Username: Choogle Foo</div>
+                                        <div className="col s12">Email: chooglefoo@gmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
                         </SideNavItem>
-                        <SideNavItem
-                            className="col s6"
-                            user={{
-                                background: '',
-                                name: 'Foo Choogle',
-                                email: 'jdandturk@gmail.com'
-                            }}
-                            userView
-                        >
-                        </SideNavItem>
-                        <SideNavItem
-                        >
-                            <h2>Notes:</h2>
+                        <SideNavItem>
+                            <h2 classname="row">Notes:</h2>
                         </SideNavItem>
                         <SideNavItem divider />
                         <SideNavItem subheader>
