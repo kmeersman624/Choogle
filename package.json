@@ -23,7 +23,10 @@
     "if-env": "^1.0.4",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.9.23",
+    "mongoose-bcrypt": "^1.8.0",
     "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "react-animations": "^1.0.0",
     "react-materialize": "^3.9.2"
   }
