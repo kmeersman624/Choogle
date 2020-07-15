@@ -1,0 +1,22 @@
+.aboutChoogle {
+    height: auto;
+    width: 50%;
+}
+
+.cardImage {
+
+    height: auto;
+    width: 75%;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardName {
+    height: auto;
+    width: 70%;
+}

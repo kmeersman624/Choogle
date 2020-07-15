@@ -24,8 +24,7 @@
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.9.23",
     "morgan": "^1.10.0",
+    "react-animations": "^1.0.0",
     "react-materialize": "^3.9.2"
-    
-    
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import SideComponent from '../SideComponent'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem } from 'react-materialize'
 import logo from '../../images/Choogle.png'
-// import SignInLink from '../../images/SignInLink.png'
-import '../Header/style.css'
+import './style.css'
 
 export default function Header() {
     return (
@@ -27,34 +27,80 @@ export default function Header() {
                 }}
             >
                 <NavItem href="">
-                    <Button
-                        // className="btn-large yellow"
-                        // floating
-                        // image="../images/SignInLink.png"
-                        // icon={<Icon className="fontSize  black-text">Home</Icon>}
-                        // large
-                        // node="button"
-                        img class="active" src="HomeLink.png" alt="home" width="20px" height="auto"
-                    />
+                    <Link to="/">
+                        <Button
+                            className="btn-large yellow"
+                            floating
+                            icon={<Icon className="fontSize  black-text">Home</Icon>}
+                            large
+                            node="button"
+                        />
+                    </Link>
                 </NavItem>
                 <NavItem href="">
-                    <Button
-                        className="btn-large red"
+                    <Link to="/about">
+                        <Button
+                            className="btn-large red"
+                            floating
+                            icon={<Icon className="fontSize">About</Icon>}
+                            node="button"
+                        />
+                    </Link>
+                </NavItem>
+                <NavItem href="">
+
+                    <SideNav
+                        id="SideNav-10"
+                        options={{
+                            draggable: true,
+                            edge: "right"
+                        }}
+                        trigger={
+                            <Button
+                        className="btn-large green notesBtn"
                         floating
-                        icon={<Icon className="fontSizeContact">Contact</Icon>}
+                        icon={<Icon className="fontSize">Notes</Icon>}
                         node="button"
                     />
+                        }
+                    >
+                        <SideNavItem
+                            user={{
+                                background: '',
+                                
+                                name: 'Foo Choogle',
+                                email: 'jdandturk@gmail.com'
+                            }}
+                            userView
+                        />
+                        <SideNavItem
+                            
+                        >
+                            Notes
+                        </SideNavItem>
+                        
+                        <SideNavItem divider />
+                        <SideNavItem subheader>
+                            Resources
+                        </SideNavItem>
+                        <SideNavItem
+                            href="#!third"
+                            waves
+                        >
+                            Saved Links
+                    </SideNavItem>
+                    </SideNav>
+
                 </NavItem>
                 <NavItem href="">
-                    <SideComponent/>
-                </NavItem>
-                <NavItem href="">
-                    <Button
-                        className="btn-large blue"
-                        floating
-                        icon={<Icon className="fontSizeContact">Contact</Icon>}
-                        node="button"
-                    />
+                    <Link to="/contact">
+                        <Button
+                            className="btn-large blue"
+                            floating
+                            icon={<Icon className="fontSizeContact">Contact</Icon>}
+                            node="button"
+                        />
+                    </Link>
                 </NavItem>
                 <NavItem href="">
                     <Button

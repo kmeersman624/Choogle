@@ -1770,6 +1770,7 @@ rc@^1.0.1, rc@^1.1.6:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+
 react-materialize@^3.9.2:
   version "3.9.2"
   resolved "https://registry.yarnpkg.com/react-materialize/-/react-materialize-3.9.2.tgz#dab18c7b0c34964b8ac4fe41e54c3107dac87145"
