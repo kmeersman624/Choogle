@@ -8,6 +8,10 @@ import save from '../../images/save.png'
 import del from '../../images/delete.png'
 import update from '../../images/update.png'
 import signup from '../../images/SignInLink.png'
+import HomeLink from '../../images/HomeLink.png'
+import AboutLink from '../../images/AboutLink.png'
+import NotesLink from '../../images/NotesLink.png'
+import ContactLink from '../../images/ContactLink.png'
 import './style.css'
 
 export default function Header() {
@@ -32,12 +36,11 @@ export default function Header() {
                 }}
             >
                 <NavItem href="">
-                    <Link to="/">
+                <Link to="/">
                         <Button
-                            className="btn-large yellow"
+                            className="btn-large"
                             floating
-                            icon={<Icon className="fontSize black-text">Home</Icon>}
-                            large
+                            icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={HomeLink} height="20px"/></Icon>}
                             node="button"
                         />
                     </Link>
@@ -47,7 +50,7 @@ export default function Header() {
                         <Button
                             className="btn-large red"
                             floating
-                            icon={<Icon className="fontSize">About</Icon>}
+                            icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={AboutLink} height="20px"/></Icon>}
                             node="button"
                         />
                     </Link>
@@ -64,7 +67,7 @@ export default function Header() {
                             <Button
                                 className="btn-large green notesBtn"
                                 floating
-                                icon={<Icon className="fontSize">Notes</Icon>}
+                                icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={NotesLink} height="20px"/></Icon>}
                                 node="button"
                             />
                         }
@@ -118,7 +121,7 @@ export default function Header() {
                         <Button
                             className="btn-large blue"
                             floating
-                            icon={<Icon className="fontSizeContact">Contact</Icon>}
+                            icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={ContactLink} height="20px"/></Icon>}
                             node="button"
                         />
                     </Link>
@@ -128,7 +131,7 @@ export default function Header() {
                         <Button
                             className="btn-large signUP"
                             floating
-                            icon={<Icon className="fontSizeContact white circleMargin"><img src={signup} height="20px"/></Icon>}
+                            icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={signup} height="20px"/></Icon>}
                             node="button"
                         />
                     </Link>

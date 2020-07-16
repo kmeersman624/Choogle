@@ -61,3 +61,8 @@
 .circleMargin {
   padding-top:6px !important;
 }
+
+.LinkCSS {
+  height: auto;
+  width: 50%;
+}
