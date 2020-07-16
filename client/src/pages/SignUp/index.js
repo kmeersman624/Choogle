@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Container, Col, Row, TextInput, Button } from "react-materialize";
+import { Link } from 'react-router-dom'
 import signin from "../../images/SignInLink.png"
 import axios from "axios";
 import "../SignUp/styles.css"
-
-
 
 class SignUp extends Component {
   constructor(props){
@@ -34,16 +33,23 @@ class SignUp extends Component {
   render(){
    const { Email, Password } = this.state
     return(
-      <Container>
+      <Container className="container-fluid">
         <Row>
-          <Col className=" center s3">
+        <Col className="s4"/>
+          <Col className=" center s4 margin-top">
             <img className="signin" src={signin}/>
-            <TextInput id="TextInput-6" label="Email" />
-            <TextInput id="TextInput-4" label="Password" />
+            <input size="60" id="TextInput-6" placeholder="Email" />
+            <input size="60" id="TextInput-4" placeholder="Password" />
             <Button className="submit" node="button" type="submit" waves="light">
               Submit
             </Button>
+            <Row>
+              <Col className="s12 margin-top">
+                <h5>Sign up or Login in <Link to="/login">here!</Link></h5>
+              </Col>
+            </Row>
           </Col>
+          <Col className="s4"/>
         </Row>
       </Container>
     )

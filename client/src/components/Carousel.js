@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from '../components/Card';
-
 import z from '../images/z.png';
 import mz from '../images/mz.png';
 import github from '../images/github.png';
