@@ -7,3 +7,8 @@
    height: 350px;
    
 }
+
+.verticalAlignItems {
+    margin-top: 150px;
+    align-items: center;
+  }

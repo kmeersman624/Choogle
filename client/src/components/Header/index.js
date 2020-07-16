@@ -123,12 +123,14 @@ export default function Header() {
                     </Link>
                 </NavItem>
                 <NavItem href="">
-                    <Button
-                        className="signUP"
-                        floating
-                        icon={<Icon className="fontSizeContact">Login</Icon>}
-                        node="button"
-                    />
+                    <Link to="/login">
+                        <Button
+                            className="signUP"
+                            floating
+                            icon={<Icon className="fontSizeContact">Login</Icon>}
+                            node="button"
+                        />
+                    </Link>
                 </NavItem>
             </Navbar>
         </>
