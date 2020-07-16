@@ -11,6 +11,10 @@ import "./App.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import SignUp from "./pages/SignUp";
+import LogIn from "./pages/LogIn";
+
+
 
 function App() {
   return (
@@ -21,7 +25,8 @@ function App() {
         <main></main>
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
-
+        <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/login" component={LogIn} />
         <Footer />
       </div>
     </Router>
