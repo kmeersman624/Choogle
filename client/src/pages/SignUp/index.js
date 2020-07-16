@@ -37,6 +37,7 @@ class SignUp extends Component {
         <Row>
         <Col className="s4"/>
           <Col className=" center s4 margin-top">
+          <form onSubmit={this.submitHandler}>
             <img className="signin" src={signin}/>
             <input size="60" id="TextInput-6" value={Email} onChange={this.changeHandler} placeholder="Email" />
             <input size="60" id="TextInput-4" value={Email} onChange={this.changeHandler} placeholder="Password" />
@@ -48,6 +49,7 @@ class SignUp extends Component {
                 <h5>Sign up or Login in <Link to="/login">here!</Link></h5>
               </Col>
             </Row>
+            </form>
           </Col>
           <Col className="s4"/>
         </Row>
