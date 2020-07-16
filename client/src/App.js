@@ -22,7 +22,6 @@ function App() {
       <div>
         <Header />
         <Route exact path="/" component={Home} />
-        <main></main>
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/signup" component={SignUp} />
