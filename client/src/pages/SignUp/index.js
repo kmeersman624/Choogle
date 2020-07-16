@@ -23,7 +23,7 @@ class SignUp extends Component {
     e.preventDefault();
     console.log(this.state);
     axios
-      .post("/signup", this.state)
+      .post("/api/users/signup", this.state)
       .then((response) => {
         console.log(response);
       })

@@ -23,7 +23,7 @@ class LogIn extends Component {
     e.preventDefault();
     console.log(this.state);
     axios
-      .post("/login", this.state)
+      .post("/api/users/login", this.state)
       .then((response) => {
         console.log(response);
       })
