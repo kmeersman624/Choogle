@@ -1,45 +1,19 @@
-import React, { Component } from "react";
-import { Container, Col, Row, TextInput, Button } from "react-materialize";
+import React from "react";
 import { Link } from 'react-router-dom'
+import { Container, Col, Row, Button } from "react-materialize";
 import signin from "../../images/SignInLink.png"
-import axios from "axios";
 import "../SignUp/styles.css"
 
-class SignUp extends Component {
-  constructor(props){
-    super(props)
-
-    this.state = {
-      userId: "",
-      Email: "",
-      Password: ""
-    }
-  }
-
-  changehandler = e => {
-    this.setState({[e.target.name]: e.target.value})
-  }
-
-  submitHandler = e => {
-    e.preventDefault()
-    console.log(this.state)
-    axios
-    .post('/signup', this.state)
-    TouchEvent(response => {
-      console.log(response)
-    })
-  }
-
-  render(){
-   const { Email, Password } = this.state
-    return(
+function SignUp() {
+  return (
+    
       <Container className="container-fluid">
         <Row>
         <Col className="s4"/>
           <Col className=" center s4 margin-top">
             <img className="signin" src={signin}/>
-            <input size="60" id="TextInput-6" placeholder="Email" />
-            <input size="60" id="TextInput-4" placeholder="Password" />
+            <input size="60" id="TextInput-6" value={Email} placeholder="Email" />
+            <input size="60" id="TextInput-4" value={Password} placeholder="Password" />
             <Button className="submit" node="button" type="submit" waves="light">
               Submit
             </Button>
@@ -52,8 +26,8 @@ class SignUp extends Component {
           <Col className="s4"/>
         </Row>
       </Container>
-    )
-  }
+    
+  );
 }
 
 export default SignUp;
