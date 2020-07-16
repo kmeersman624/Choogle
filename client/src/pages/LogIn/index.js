@@ -10,8 +10,8 @@ class LogIn extends Component {
     super(props);
 
     this.state = {
-      Email: "",
-      Password: "",
+      email: "",
+      password: "",
     };
   }
 
@@ -23,7 +23,7 @@ class LogIn extends Component {
     e.preventDefault();
     console.log(this.state);
     axios
-      .post("/login", this.state)
+      .post("/api/users/login", this.state)
       .then((response) => {
         console.log(response);
       })
@@ -33,7 +33,7 @@ class LogIn extends Component {
   };
 
   render() {
-    const { Email, Password } = this.state;
+    const { email, password } = this.state;
     return (
       <Container className="container-fluid">
         <Row>
@@ -46,16 +46,16 @@ class LogIn extends Component {
             <input
               size="60"
               id="TextInput-6"
-              name="Email"
-              value={Email}
+              name="email"
+              value={email}
               onChange={this.changeHandler}
               placeholder="Email"
             />
             <input
               size="60"
               id="TextInput-4"
-              name="Password"
-              value={Password}
+              name="password"
+              value={password}
               onChange={this.changeHandler}
               placeholder="Password"
             />
