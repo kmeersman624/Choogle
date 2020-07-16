@@ -38,8 +38,8 @@ class SignUp extends Component {
         <Col className="s4"/>
           <Col className=" center s4 margin-top">
             <img className="signin" src={signin}/>
-            <input size="60" id="TextInput-6" placeholder="Email" />
-            <input size="60" id="TextInput-4" placeholder="Password" />
+            <input size="60" id="TextInput-6" value={Email} onChange={this.changeHandler} placeholder="Email" />
+            <input size="60" id="TextInput-4" value={Email} onChange={this.changeHandler} placeholder="Password" />
             <Button className="submit" node="button" type="submit" waves="light">
               Submit
             </Button>
