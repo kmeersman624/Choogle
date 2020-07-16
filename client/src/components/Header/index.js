@@ -7,6 +7,7 @@ import welcome from '../../images/welcome.png'
 import save from '../../images/save.png'
 import del from '../../images/delete.png'
 import update from '../../images/update.png'
+import signup from '../../images/SignInLink.png'
 import './style.css'
 
 export default function Header() {
@@ -125,9 +126,9 @@ export default function Header() {
                 <NavItem href="">
                     <Link to="/login">
                         <Button
-                            className="signUP"
+                            className="btn-large signUP"
                             floating
-                            icon={<Icon className="fontSizeContact">Login</Icon>}
+                            icon={<Icon className="fontSizeContact white circleMargin"><img src={signup} height="20px"/></Icon>}
                             node="button"
                         />
                     </Link>

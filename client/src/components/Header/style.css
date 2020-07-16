@@ -58,12 +58,6 @@
   margin-top: 20px !important;
 }
 
-.verticalAlignItems {
-  display: flex;
-  align-items: center;
-}
-.signUP {
-    background-image: url("../../images/SignInLink.png");
-    width: "20px";
-    height: "auto"
+.circleMargin {
+  padding-top:6px !important;
 }
