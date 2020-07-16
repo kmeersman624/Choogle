@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar, NavItem, Icon, Button, SideNav, SideNavItem, TextInput } from 'react-materialize'
 import logo from '../../images/Choogle.png'
+import circlelogo from '../../images/chooglelogo.png'
 import welcome from '../../images/welcome.png'
 import save from '../../images/save.png'
 import del from '../../images/delete.png'
@@ -74,7 +75,7 @@ export default function Header() {
                             <SideNavItem className="col s12">
                                 <div className="row">
                                     <div className="col s6 left-align">
-                                        <img src={logo} height="200px" />
+                                        <img src={circlelogo} height="200px" />
                                     </div>
                                     <div className="col s6">
                                         <div className="row">
