@@ -25,6 +25,11 @@ class SignUp extends Component {
     axios
       .post("/api/users/signup", this.state)
       .then((response) => {
+        this.setState({
+          email: "",
+          password: ""
+        })
+        window.location.href = '/'
         console.log(response);
       })
       .catch((error) => {
