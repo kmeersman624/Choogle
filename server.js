@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 mongoose.connect("mongodb://localhost/notesdb", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-}).then( console.log(connected));
+}).then( console.log("connected"));
 
 // Parse req.body
 // Creating express app and configuring middleware needed for authentication

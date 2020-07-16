@@ -20,7 +20,7 @@ const passport = require("../../../config/passport");
       password: req.body.password
     })
       .then(function() {
-        res.send("You are now a Choogle Foo");
+        res.send("You are now a Choogler, Foo");
       })
       .catch(function(err) {
         res.status(401).json(err);
