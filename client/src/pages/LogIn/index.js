@@ -27,20 +27,22 @@ class LogIn extends Component {
       .then(response => {
         console.log(response)
       })
+      .catch(error => {
+        console.log(error)
+      })
   }
 
   render() {
     const { Email, Password } = this.state
     return (
       <Container className="container-fluid">
-        <Row className="verticalAlignItems">
+        <Row>
           <Col className="s4" />
-          <Col className="center s4 margin-top">
-            <form onSubmit={this.submitHandler}>
+            <form className="col s4 center margin-top" onSubmit={this.submitHandler}>
               <img className="signin" src={login} />
-              <input size="60" id="TextInput-6" value={Email} onChange={this.changeHandler} placeholder="Email" />
-              <input size="60" id="TextInput-4" value={Password} onChange={this.changeHandler} placeholder="Password" />
-              <Button className="submit large" node="button" type="submit" waves="light">
+              <input size="60" id="TextInput-6" name="Email" value={Email} onChange={this.changeHandler} placeholder="Email" />
+              <input size="60" id="TextInput-4" name="Password" value={Password} onChange={this.changeHandler} placeholder="Password" />
+              <Button className="submit" node="button" type="submit" waves="light">
                 Submit
             </Button>
               <Row>
@@ -49,12 +51,11 @@ class LogIn extends Component {
                 </Col>
               </Row>
             </form>
-          </Col>
           <Col className="s4" />
         </Row>
       </Container>
     )
-  };
+  }
 }
 
 export default LogIn;
