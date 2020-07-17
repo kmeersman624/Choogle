@@ -47,7 +47,7 @@ class LogIn extends Component {
             className="col s4 center margin-top"
             onSubmit={this.submitHandler}
           >
-            <img className="signin" src={login} />
+            <img className="signin" alt="login" src={login} />
             <input
               size="60"
               id="TextInput-6"
