@@ -16,5 +16,8 @@ export default {
   // Saves a note to the database
   saveNote: function(noteData) {
     return axios.post("/api/notes", noteData);
+  },
+  ping: function(){
+    return axios.get("/ping");
   }
 };

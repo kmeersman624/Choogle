@@ -54,10 +54,8 @@ class Header extends Component {
           className="white z-depth-5"
           alignLinks="right"
           brand={
-            <Link to="/">
-              <a className="brand-logo logoMargin" href="#">
-                <img src={logo} alt={logo} height="60px" width="auto" alt="" />
-              </a>
+            <Link className="brand-logo logoMargin" to="/">
+              <img src={logo} alt={logo} height="60px" width="auto" alt="" />
             </Link>
           }
           id="mobile-nav"
@@ -74,156 +72,129 @@ class Header extends Component {
             preventScrolling: true,
           }}
         >
-          <NavItem href="">
-            <Link to="/">
-              <a href class="waves-effect waves-grey btn-flat">
-                <font styles="vertical-align: inherit;">
-                  <font styles="vertical-align: inherit;">Home</font>
-                </font>
-              </a>
-            </Link>
-          </NavItem>
-          <NavItem href="">
-            <Link to="/about">
-              <a href class="waves-effect waves-grey btn-flat">
-                <font styles="vertical-align: inherit;">
-                  <font styles="vertical-align: inherit;">About</font>
-                </font>
-              </a>
-              {/* <Button
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              API.ping().then(function ({ data }) {
+                console.log(data);
+              });
+            }}
+            className="waves-effect waves-grey btn-flat"
+          >
+            <font styles="vertical-align: inherit;">Ping!</font>
+          </a>
+          <Link className="waves-effect waves-grey btn-flat" to="/">
+            <font styles="vertical-align: inherit;">Home</font>
+          </Link>
+
+          <Link className="waves-effect waves-grey btn-flat" to="/about">
+            <font styles="vertical-align: inherit;">About</font>
+
+            {/* <Button
                             className="btn-large"
                             floating
                             icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={AboutLink} height="20px"/></Icon>}
                             node="button"
                         /> */}
-            </Link>
-          </NavItem>
-          <NavItem href="">
-            <SideNav
-              className="sideNavWidth"
-              id="SideNav-10"
-              options={{
-                draggable: true,
-                edge: "right",
-                scrollable: true,
-              }}
-              trigger={
-                <a href class="waves-effect waves-grey btn-flat">
-                  <font styles="vertical-align: inherit;">
-                    <font
-                      className="notesTEXT"
-                      styles="vertical-align: inherit;"
-                    >
-                      NOTES
-                    </font>
-                  </font>
-                </a>
-                // <Button
-                //     className="btn-large notesBtn"
-                //     floating
-                //     icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={NotesLink} height="20px"/></Icon>}
-                //     node="button"
-                // />
-              }
-            >
-              <SideNavItem className="col s12 center-align">
-                <img src={welcome} alt={welcome} height="50px" />
-              </SideNavItem>
-              <div className="row">
-                <SideNavItem className="col s12">
-                  <div className="row">
-                    <div className="col s6 left-align">
-                      <img src={circlelogo} alt={circlelogo} height="200px" />
-                    </div>
-                    <div className="col s6">
-                      <div className="row">
-                        <div className="col s12 marginTop">
-                          Username: Choogle Foo
-                        </div>
-                        <div className="col s12">
-                          Email: chooglefoo@gmail.com
-                        </div>
+          </Link>
+
+          <SideNav
+            className="sideNavWidth waves-effect waves-grey btn-flat"
+            id="SideNav-10"
+            options={{
+              draggable: true,
+              edge: "right",
+              scrollable: true,
+            }}
+            trigger={
+              <a href="#" className="waves-effect waves-grey btn-flat">
+                <font className="notesTEXT" styles="vertical-align: inherit;">
+                  Notes
+                </font>
+              </a>
+            }
+          >
+            <SideNavItem className="col s12 center-align">
+              <img src={welcome} alt={welcome} height="50px" />
+            </SideNavItem>
+            <div className="row">
+              <SideNavItem className="col s12">
+                <div className="row">
+                  <div className="col s6 left-align">
+                    <img src={circlelogo} alt={circlelogo} height="200px" />
+                  </div>
+                  <div className="col s6">
+                    <div className="row">
+                      <div className="col s12 marginTop">
+                        Username: Choogle Foo
                       </div>
+                      <div className="col s12">Email: chooglefoo@gmail.com</div>
                     </div>
                   </div>
-                </SideNavItem>
-              </div>
-              <div className="row">
-                <SideNavItem>
-                  <h2>Notes:</h2>
-                  {this.state.notes.map((note) => (
-                    <>
+                </div>
+              </SideNavItem>
+            </div>
+            <div className="row">
+              <SideNavItem>
+                <h2>Notes:</h2>
+                {this.state.notes.map((note) => (
+                  <>
                     <Card
-        actions={[
-          <Button
-            node="a"
-            small
-            style={{
-              marginRight: "5px",
-            }}
-            waves="light"
-          >
-            Save
-          </Button>,
-          <Button
-            node="a"
-            small
-            style={{
-              marginRight: "5px",
-            }}
-            waves="light"
-          >
-            Update
-          </Button>,
-          <Button
-            node="a"
-            small
-            style={{
-              marginRight: "5px",
-            }}
-            waves="light"
-          >
-            Delete
-          </Button>,
-        ]}
-        className="blue-grey darken-1"
-        closeIcon={<Icon>close</Icon>}
-        revealIcon={<Icon>more_vert</Icon>}
-        textClassName="white-text"
-        header={note.topic}
-        title={note.url}
-      >
-        {note.notes}
-      </Card>
-                    </>
-                  ))}
-                </SideNavItem>
-              </div>
-              <SideNavItem divider />
-              
-              
-              
-              
-            </SideNav>
-          </NavItem>
-          <NavItem href="">
-            <Link to="/contact">
-              <a href class="waves-effect waves-grey btn-flat">
-                <font styles="vertical-align: inherit;">
-                  <font styles="vertical-align: inherit;">Contact</font>
-                </font>
-              </a>
-            </Link>
-          </NavItem>
-          <NavItem href="">
-            <Link to="/login">
-              <a href class="waves-effect waves-grey btn-flat">
-                <font styles="vertical-align: inherit;">
-                  <font styles="vertical-align: inherit;">Login</font>
-                </font>
-              </a>
-            </Link>
-          </NavItem>
+                      actions={[
+                        <Button
+                          node="a"
+                          small
+                          style={{
+                            marginRight: "5px",
+                          }}
+                          waves="light"
+                        >
+                          Save
+                        </Button>,
+                        <Button
+                          node="a"
+                          small
+                          style={{
+                            marginRight: "5px",
+                          }}
+                          waves="light"
+                        >
+                          Update
+                        </Button>,
+                        <Button
+                          node="a"
+                          small
+                          style={{
+                            marginRight: "5px",
+                          }}
+                          waves="light"
+                        >
+                          Delete
+                        </Button>,
+                      ]}
+                      className="blue-grey darken-1"
+                      closeIcon={<Icon>close</Icon>}
+                      revealIcon={<Icon>more_vert</Icon>}
+                      textClassName="white-text"
+                      header={note.topic}
+                      title={note.url}
+                    >
+                      {note.notes}
+                    </Card>
+                  </>
+                ))}
+              </SideNavItem>
+            </div>
+            <SideNavItem divider />
+          </SideNav>
+
+          <Link className="waves-effect waves-grey btn-flat" to="/contact">
+            <font styles="vertical-align: inherit;">Contact</font>
+          </Link>
+
+          <Link className="waves-effect waves-grey btn-flat" to="/login">
+            <font styles="vertical-align: inherit;">Login</font>
+          </Link>
         </Navbar>
       </>
     );

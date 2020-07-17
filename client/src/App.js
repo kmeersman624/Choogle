@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header/index";
-// import Footer from "./components/Footer";
-
 
 // Styles
 import "./App.css";
@@ -13,21 +11,17 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import LogIn from "./pages/LogIn";
-
-
+import PrivateRoute from "./utils/PrivateRoute";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Header />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/signup" component={SignUp} />
-        <Route exact path="/login" component={LogIn} />
-        {/* <Footer /> */}
-      </div>
+      <Header />
+      <PrivateRoute exact path="/" component={Home} />
+      <PrivateRoute exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/signup" component={SignUp} />
+      <Route exact path="/login" component={LogIn} />
     </Router>
   );
 }
