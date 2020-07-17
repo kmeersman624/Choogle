@@ -1840,6 +1840,11 @@ react-materialize@^3.9.2:
   dependencies:
     classnames "^2.2.6"
 
+react-parallax-tilt@^1.4.58:
+  version "1.4.58"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.4.58.tgz#848e730ad9500181dffd14b0b50fb531da7f8151"
+  integrity sha512-dz0oERQKnzJGa/+UCrarK9LS67JV3f2Z4feaBx2OqIBr+i4+sa6N1Fpc5x0AvfCHo/WGrNiTd17xAtwSD15RSQ==
+
 read-pkg@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/read-pkg/-/read-pkg-4.0.1.tgz#963625378f3e1c4d48c85872b5a6ec7d5d093237"
