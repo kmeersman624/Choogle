@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <div className="center col s12">
-        <img className="mainlogo" src={logo}/>
+        <img className="mainlogo" alt="" src={logo}/>
       </div>
     </div>
   );

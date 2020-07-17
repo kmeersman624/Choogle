@@ -19,7 +19,7 @@ function About() {
   return (
     <div>
       <div className="row center">
-        <span><img className="aboutHeader aboutChoogle" src={about} /></span>
+        <span><img className="aboutHeader aboutChoogle" alt="about img" src={about} /></span>
       </div>
       <div className="row center">
         <p>Here at Choogle, we wanted to bring our users.</p>
@@ -28,15 +28,15 @@ function About() {
       <div class="col xs12 s6 m=6 l3">
           <div class="card large">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src={dan}></img>
+                <img class="activator" alt="dan" src={dan}></img>
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={DanName}></img><i class="material-icons right">more</i></span>
-                <p><a href="#">Linkedin</a></p>
-                <p><a href="#">Github</a></p>
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" alt="dan" src={DanName}></img><i class="material-icons right">more</i></span>
+                <p><a href="#link">Linkedin</a></p>
+                <p><a href="#git">Github</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><img class="cardName" src={DanName}></img><i class="material-icons right">X</i></span>
+                <span class="card-title grey-text text-darken-4"><img class="cardName" alt="dan name" src={DanName}></img><i class="material-icons right">X</i></span>
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
               </div>
           </div>
@@ -44,15 +44,15 @@ function About() {
         <div class="col xs12 s6 m=6 l3">
           <div class="card large">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src={kate}></img>
+                <img class="activator" alt="kate" src={kate}></img>
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={KateName}></img><i class="material-icons right">more</i></span>
-                <p><a href="#">Linkedin</a></p>
-                <p><a href="#">Github</a></p>
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" alt="kate" src={KateName}></img><i class="material-icons right">more</i></span>
+                <p><a href="#link">Linkedin</a></p>
+                <p><a href="#git">Github</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><img class="cardName" src={KateName}></img><i class="material-icons right">X</i></span>
+                <span class="card-title grey-text text-darken-4"><img class="cardName" alt="" src={KateName}></img><i class="material-icons right">X</i></span>
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
               </div>
           </div>
@@ -60,15 +60,15 @@ function About() {
         <div class="col xs12 s6 m=6 l3">
           <div class="card large">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src={mike}></img>
+                <img class="activator" alt="" src={mike}></img>
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={MikeName}></img><i class="material-icons right">more</i></span>
-                <p><a href="#">Linkedin</a></p>
-                <p><a href="#">Github</a></p>
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" alt="mike" src={MikeName}></img><i class="material-icons right">more</i></span>
+                <p><a href="#link">Linkedin</a></p>
+                <p><a href="#git">Github</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><img class="cardName" src={MikeName}></img><i class="material-icons right">X</i></span>
+                <span class="card-title grey-text text-darken-4"><img class="cardName" alt="" src={MikeName}></img><i class="material-icons right">X</i></span>
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
               </div>
           </div>
@@ -76,15 +76,15 @@ function About() {
         <div class="col xs12 s6 m=6 l3">
           <div class="card large round">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src={marc}></img>
+                <img class="activator" alt="" src={marc}></img>
               </div>
               <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4"><img class="cardName" src={mtname}></img><i class="material-icons right">more</i></span>
-                <p><a href="#">Linkedin</a></p>
-                <p><a href="#">Github</a></p>
+                <span class="card-title activator grey-text text-darken-4"><img class="cardName" alt="" src={mtname}></img><i class="material-icons right">more</i></span>
+                <p><a href="#link">Linkedin</a></p>
+                <p><a href="#git">Github</a></p>
               </div>
               <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><img class="cardName" src={mtname}></img><i class="material-icons right">X</i></span>
+                <span class="card-title grey-text text-darken-4"><img class="cardName" alt="" src={mtname}></img><i class="material-icons right">X</i></span>
                 <p>Here is some more information about this product that is only revealed once clicked on.</p>
               </div>
           </div>

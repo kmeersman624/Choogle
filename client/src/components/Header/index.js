@@ -16,7 +16,7 @@ export default function Header() {
             <Navbar
                 className="white z-depth-5"
                 alignLinks="right"
-                brand={<Link to="/"><a className="brand-logo logoMargin" href="#"><img src={logo} height="60px" width="auto" alt="" /></a></Link>}
+                brand={<Link to="/"><a className="brand-logo logoMargin" href="#home"><img src={logo} height="60px" width="auto" alt="" /></a></Link>}
                 id="mobile-nav"
                 menuIcon={<Icon>menu</Icon>}
                 options={{
@@ -70,13 +70,13 @@ export default function Header() {
                         }
                     >
                         <SideNavItem className="col s12 center-align">
-                            <img src={welcome} height="50px" />
+                            <img src={welcome} alt="" height="50px" />
                         </SideNavItem>
                         <div className="row">
                             <SideNavItem className="col s12">
                                 <div className="row">
                                     <div className="col s6 left-align">
-                                        <img src={circlelogo} height="200px" />
+                                        <img src={circlelogo} alt="" height="200px" />
                                     </div>
                                     <div className="col s6">
                                         <div className="row">
@@ -100,7 +100,7 @@ export default function Header() {
                             <TextInput id="TextInput-5" placeholder="Type or paste resources to save here!" className="" />
                         </SideNavItem>
                         <SideNavItem>
-                            <img src={save} height="40px" className="marginRight" /><img src={update} height="40px" className="marginRight" /><img src={del} height="40px" className="marginRight" />
+                            <img src={save} alt="" height="40px" className="marginRight" /><img src={update} alt="" height="40px" className="marginRight" /><img src={del} alt="" height="40px" className="marginRight" />
                         </SideNavItem>
                         <SideNavItem subheader className="marginTop">
                             <h3 className="col s12">Saved Links:</h3>
@@ -109,7 +109,7 @@ export default function Header() {
                             <TextInput id="TextInput-4" placeholder="Type or paste Links to save here!" className="" />
                         </SideNavItem>
                         <SideNavItem>
-                            <img src={save} height="40px" className="marginRight" /><img src={update} height="40px" className="marginRight" /><img src={del} height="40px" className="marginRight" />
+                            <img src={save} alt="" height="40px" className="marginRight" /><img src={update} alt="" height="40px" className="marginRight" /><img src={del} alt="" height="40px" className="marginRight" />
                         </SideNavItem>
                     </SideNav>
                 </NavItem>
@@ -128,7 +128,7 @@ export default function Header() {
                         <Button
                             className="btn-large signUP"
                             floating
-                            icon={<Icon className="fontSizeContact white circleMargin"><img src={signup} height="20px"/></Icon>}
+                            icon={<Icon className="fontSizeContact white circleMargin"><img src={signup} alt="" height="20px"/></Icon>}
                             node="button"
                         />
                     </Link>
