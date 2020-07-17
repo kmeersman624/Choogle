@@ -8816,6 +8816,11 @@ react-overlays@^4.0.0:
     uncontrollable "^7.0.0"
     warning "^4.0.3"
 
+react-parallax-tilt@^1.4.58:
+  version "1.4.58"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.4.58.tgz#848e730ad9500181dffd14b0b50fb531da7f8151"
+  integrity sha512-dz0oERQKnzJGa/+UCrarK9LS67JV3f2Z4feaBx2OqIBr+i4+sa6N1Fpc5x0AvfCHo/WGrNiTd17xAtwSD15RSQ==
+
 react-router-dom@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.2.0.tgz#9e65a4d0c45e13289e66c7b17c7e175d0ea15662"
