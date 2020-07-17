@@ -1,7 +1,7 @@
 # Choogle
 
   ## Description
-  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will also be able to access articles through W3 Schools API and GitHub API and store into their own user database for easy and quick reference in one convenient location.
+  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will also be able to access articles through Google serach bar and store into their own user database for easy and quick reference in one convenient location.
 
   Link to deployed application: https://chooglefoo.herokuapp.com/
 
@@ -50,7 +50,7 @@
     Coming Soon...
 
   ## Challenges
-  * Hopefully None :)
+  * We had to work through 401 errors from Passport when trying to authenticate the user email and password.  We had used code from a previous project that was using Sequelize instead of Mongoose with Passport.  We needed to go through code and make sure everything was set up to work correctly with Mongoose which took a lot longer than expected.
 
   ## Future Development
   * TBD
