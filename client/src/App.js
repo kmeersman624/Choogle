@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header/index";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 
 // Styles
@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/login" component={LogIn} />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
