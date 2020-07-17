@@ -29,7 +29,7 @@ function About() {
 
         <h6>All members of the Choogle team, graduated from the UofA Coding Bootcamp, and the links that we provide on the site, are all great go to resources that helped us all develop into the developers we are today.</h6>
 
-        <h6>We all hope to provide ongoing knowledge and resources through our Blog page and look forward to hearing from you if you have questions.</h6>
+        <h6>We all hope to provide ongoing knowledge and resources through our Blog page coming soon, and look forward to hearing from you if you have questions, or just want to send some love.</h6>
 
         <h6>We appreciate you taking the time to take a look at our site, and if you're just getting started with your development career, stay focused, stay patient, and good luck.</h6>
         <br></br>
