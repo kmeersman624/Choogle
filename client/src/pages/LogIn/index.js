@@ -27,9 +27,9 @@ class LogIn extends Component {
       .then((response) => {
         this.setState({
           email: "",
-          password: ""
-        })
-        window.location.href = '/'
+          password: "",
+        });
+        window.location.href = "/";
         console.log(response);
       })
       .catch((error) => {
@@ -57,6 +57,7 @@ class LogIn extends Component {
               placeholder="Email"
             />
             <input
+              type="password"
               size="60"
               id="TextInput-4"
               name="password"

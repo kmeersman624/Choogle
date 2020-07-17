@@ -22,6 +22,7 @@ router.post("/signup", function (req, res) {
       res.send("You are now a Choogler, Foo");
     })
     .catch(function (err) {
+      console.log(err);
       res.status(401).json(err);
     });
 });
