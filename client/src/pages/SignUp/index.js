@@ -57,6 +57,7 @@ class SignUp extends Component {
               placeholder="Email"
             />
             <input
+              type="password"
               size="60"
               id="TextInput-4"
               name="password"
