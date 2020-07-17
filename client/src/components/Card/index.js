@@ -1,17 +1,57 @@
-import React from 'react'
-import {Card, Icon, CardTitle} from "react-materialize";
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
 
-export default function Resources(){
-   return(
-    <Card
-      actions={[
-        <a key="1" href="#">This is a Link</a>
-      ]}
-      closeIcon={<Icon>close</Icon>}
-      header={<CardTitle image="https://materializecss.com/images/sample-1.jpg">Card Title</CardTitle>}
-      revealIcon={<Icon>more_vert</Icon>}
-    >
-      Here is the standard card with an image thumbnail.
+const useStyles = makeStyles({
+  root: {
+    minWidth: 200
+  },
+  bullet: {
+    display: "inline-block",
+    margin: "0 2px",
+    transform: "scale(0.8)"
+  },
+  title: {
+    fontSize: 14
+  },
+  pos: {
+    marginBottom: 12
+  }
+});
+
+export default function OutlinedCard() {
+  const classes = useStyles();
+  const bull = <span className={classes.bullet}>•</span>;
+
+  return (
+    <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography
+          className={classes.title}
+          color="textSecondary"
+          gutterBottom
+        >
+          Word of the Day
+        </Typography>
+        <Typography variant="h5" component="h2">
+          be{bull}nev{bull}o{bull}lent
+        </Typography>
+        <Typography className={classes.pos} color="textSecondary">
+          adjective
+        </Typography>
+        <Typography variant="body2" component="p">
+          well meaning and kindly.
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
     </Card>
-   ) 
+  );
 }

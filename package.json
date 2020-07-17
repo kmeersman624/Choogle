@@ -11,7 +11,8 @@
     "dev:client": "yarn client",
     "client": "cd client && yarn start",
     "install": "cd client && yarn",
-    "build": "cd client && yarn build"
+    "build": "cd client && yarn build",
+    "seed": "node seeders/seeds.js"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",

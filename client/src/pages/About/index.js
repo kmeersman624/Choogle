@@ -1,17 +1,6 @@
 import React from "react";
-import linkedin from "../../images/linkedin.png";
-import github from "../../images/github.png";
-import about from "../../images/AboutLink.png";
-import choogle from "../../images/Choogle.png";
-import dan from "../../images/danny.jpeg";
-import kate from "../../images/kate.jpeg";
-import marc from "../../images/marcus.jpeg";
-import mike from "../../images/mike.png";
-import mtname from "../../images/mtname.png";
-import DanName from "../../images/DanName.png";
-import KateName from "../../images/KateName.png";
-import MikeName from "../../images/MikeName.png";
-import ChoogleFam from "../../images/ChoogleFam.png";
+import AboutMain from "../../components/AboutMain";
+
 // import { Chip } from "react-materialize";
 
 import './about.css'
@@ -19,6 +8,7 @@ import './about.css'
 function About() {
   return (
     <div>
+<<<<<<< HEAD
       <div className="row center">
         <span><img className="aboutHeader aboutChoogle" src={about} /></span>
       </div>
@@ -107,6 +97,9 @@ function About() {
         </div>
           
       </div>
+=======
+      <AboutMain/>
+>>>>>>> c260bb49d05c34b00b44e7cd208675e500fdc93b
     </div>
   );
 }
