@@ -20,7 +20,7 @@ function About() {
   return (
     <div>
       <div className="row center">
-        <span><img className="aboutHeader aboutChoogle" src={about} /></span>
+        <span><img className="aboutHeader aboutChoogle" alt="about img" src={about} /></span>
       </div>
       <div className="row center">
         <h6>Here at Choogle, we wanted to bring you a simple information based note taking application that’s primary target audience is someone beginning their web development journey.</h6>
