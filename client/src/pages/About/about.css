@@ -1,6 +1,7 @@
 .aboutChoogle {
+    padding-top: 50px;
     height: auto;
-    width: 50%;
+    width: 20%;
 }
 
 .cardImage {
@@ -19,4 +20,9 @@
 .cardName {
     height: auto;
     width: 70%;
+}
+
+.aboutChoogleFam {
+    height: auto;
+    width: 50%;
 }

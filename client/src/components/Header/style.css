@@ -3,7 +3,7 @@
 }
 
 .fontSizeContact {
-  font-size: 11px !important;
+  font-size: 15px !important;
 }
 
 .logoMargin {
@@ -60,4 +60,18 @@
 
 .circleMargin {
   padding-top:6px !important;
+}
+
+.LinkCSS {
+  height: auto;
+  width: 50%;
+}
+
+.NavBarButton {
+  padding-top: 45px;
+
+}
+
+.notesTEXT {
+  color: black;
 }
