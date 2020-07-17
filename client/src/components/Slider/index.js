@@ -1,29 +1,130 @@
-import React from 'react'
-import {Carousel} from "react-materialize";
-import "./styles.css"
+import React from "react";
 
-export default function Slider(){
-return(
-<Carousel
-  carouselId="Carousel-2"
-  images={[
-    'https://picsum.photos/200/300?image=0',
-    'https://picsum.photos/200/300?image=1',
-    'https://picsum.photos/200/300?image=2',
-    'https://picsum.photos/200/300?image=3',
-    'https://picsum.photos/200/300?image=4'
-  ]}
-  options={{
-    dist: -100,
-    duration: 200,
-    fullWidth: false,
-    indicators: false,
-    noWrap: false,
-    numVisible: 5,
-    onCycleTo: null,
-    padding: 0,
-    shift: 0
-  }}
-/>
-)
+function carousel() {
+  return (
+    <div>
+      <div class="carousel">
+        <a class="carousel-item" href="#one!">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/office.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Card Title<i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="#">This is a link</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Card Title<i class="material-icons right">close</i>
+              </span>
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="carousel-item" href="#two!">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/office.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Card Title<i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="#">This is a link</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Card Title<i class="material-icons right">close</i>
+              </span>
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </a>
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">
+              Card Title<i class="material-icons right">more_vert</i>
+            </span>
+            <p>
+              <a href="#">This is a link</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">
+              Card Title<i class="material-icons right">close</i>
+            </span>
+            <p>
+              Here is some more information about this product that is only
+              revealed once clicked on.
+            </p>
+          </div>
+        </div>
+        <a class="carousel-item" href="#four!">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/office.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Card Title<i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="#">This is a link</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Card Title<i class="material-icons right">close</i>
+              </span>
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a class="carousel-item" href="#five!">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/office.jpg" />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Card Title<i class="material-icons right">more_vert</i>
+              </span>
+              <p>
+                <a href="#">This is a link</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                Card Title<i class="material-icons right">close</i>
+              </span>
+              <p>
+                Here is some more information about this product that is only
+                revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
 }
+
+export default carousel;
