@@ -7,8 +7,13 @@ const passport = require("../../../config/passport");
 // If the user has valid login credentials, send them to the home page.
 // Otherwise the user will be sent an error
 router.post("/login", passport.authenticate("local"), function (req, res) {
-  res.json(req.user);
+  res.json({
+    message: "Welcome back you Chooglin Foo",
+    user: {
+      email: req.user.email,
+    },
   });
+});
 
 // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
 // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
@@ -16,10 +21,15 @@ router.post("/login", passport.authenticate("local"), function (req, res) {
 router.post("/signup", function (req, res) {
   db.User.create({
     email: req.body.email,
-    password: req.body.password
+    password: req.body.password,
   })
-    .then(function () {
-      res.send("You are now a Choogler, Foo");
+    .then(function (userDb) {
+      res.json({
+        message: "You are now a Choogler, Foo",
+        user: {
+          email: userDb.email,
+        },
+      });
     })
     .catch(function (err) {
       console.log(err);
@@ -43,7 +53,7 @@ router.get("/user_data", function (req, res) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       email: req.user.email,
-      id: req.user.id
+      id: req.user.id,
     });
   }
 });

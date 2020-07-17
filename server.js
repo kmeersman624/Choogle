@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 const path = require("path");
 const passport = require("./config/passport");
+const isAuthenticated = require("./config/middleware/isAuthenticated");
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -24,11 +25,16 @@ app.use(express.static("public"));
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
+
 // Logger
 app.use(morgan("dev"));
 
 // Register route
 app.use(require("./routes"));
+
+app.get("/ping", isAuthenticated, function(req, res){
+  res.send("Made it!")
+})
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
