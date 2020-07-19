@@ -14,25 +14,10 @@ class NoteCard extends Component {
     this.loadNotes();
   }
 
-  handleChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
-  };
-
   loadNotes = () => {
     API.getNotes()
       .then((res) => this.setState({ notes: res.data }))
       .catch((err) => console.log(err));
-  };
-
-  saveNote = (event) => {
-    event.preventDefault();
-    const noteObj = {
-      topic: this.state.topic,
-      url: this.state.url,
-      body: this.state.body,
-    };
-    API.saveNote(noteObj);
   };
 
   // Deletes a note from the database with a given id, then reloads notes from the db
@@ -45,31 +30,6 @@ class NoteCard extends Component {
   render() {
     return (
       <>
-        <form onSubmit={this.saveNote}>
-          <label htmlFor="topic">Topic</label>
-          <input
-            type="text"
-            placeholder="Enter your topic here"
-            name="topic"
-            onChange={this.handleChange}
-          />
-          <label htmlFor="url">URL</label>
-          <input
-            type="text"
-            placeholder="Enter your url here"
-            name="url"
-            onChange={this.handleChange}
-          />
-          <label htmlFor="body">Body</label>
-          <textarea
-            type="text"
-            placeholder="Enter your notes here"
-            name="body"
-            onChange={this.handleChange}
-          ></textarea>
-          <button type="submit" onClick={this.saveNote}>Create Note</button>
-        </form>
-
         {this.state.notes.map((note) => (
           <Card
             actions={[
