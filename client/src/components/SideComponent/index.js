@@ -3,6 +3,7 @@ import { SideNav, SideNavItem } from "react-materialize";
 import welcome from "../../images/welcome.png";
 import circlelogo from "../../images/chooglelogo.png";
 import NoteCard from "../NoteCard";
+import Form from "../NoteForm";
 
 class SideComponent extends Component {
     
@@ -38,6 +39,7 @@ class SideComponent extends Component {
                                     <div className="col s12 marginTop">Username: Choogle Foo</div>
                                     <div className="col s12">Email: chooglefoo@gmail.com</div>
                                 </div>
+                     <Form />
                             </div>
                         </div>
                     </SideNavItem>
@@ -45,11 +47,14 @@ class SideComponent extends Component {
                 <div className="row">
                     <SideNavItem>
                         <h2>Notes:</h2>
-                        <NoteCard />
+                    <SideNavItem divider />   
                     </SideNavItem>
                 </div>
-                <SideNavItem divider />
-            </SideNav>
+                <div className="row">
+                   <NoteCard />
+                    </div>
+                </SideNav>
+            
         );
     }
 }
