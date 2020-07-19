@@ -4,6 +4,7 @@ import { Navbar, Icon } from "react-materialize";
 import API from "../../utils/API";
 import logo from "../../images/Choogle.png";
 import "./style.css";
+import SideComponent from "../SideComponent";
 
 class Header extends Component {
   render() {
@@ -49,13 +50,8 @@ class Header extends Component {
           <Link className="waves-effect waves-grey btn-flat" to="/about">
             <font styles="vertical-align: inherit;">About</font>
 
-            {/* <Button
-                            className="btn-large"
-                            floating
-                            icon={<Icon className="fontSizeContact white circleMargin LinkCSS"><img src={AboutLink} height="20px"/></Icon>}
-                            node="button"
-                        /> */}
           </Link>
+            <SideComponent />
 
           <Link className="waves-effect waves-grey btn-flat" to="/contact">
             <font styles="vertical-align: inherit;">Contact</font>
