@@ -17,6 +17,12 @@ const UserSchema = new Schema({
     required: true,
     bcrypt: true
   },
+  notes: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Note"
+    }
+  ]
 });
 
 UserSchema.plugin(require('mongoose-bcrypt'));
