@@ -11,19 +11,19 @@ const noteSeed = [
   {
     topic: "CSS",
     url: "w3schools.com",
-    notes:
+    body:
       'CSS makes things look pretty.',
   },
   {
     topic: "HTML",
     url: "w3schools.com",
-    notes:
+    body:
       "The skeleton of the internet.",
   },
   {
     topic: "React",
     url: "reactjs.org",
-    notes:
+    body:
       "Front end framework created by some dude at Facebook.",
   },
 ];

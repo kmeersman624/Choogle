@@ -1,22 +1,25 @@
 const router = require("express").Router();
 const db = require("../../../models");
+const isAuthenticated = require("../../../config/middleware/isAuthenticated");
 
 // Matches with "/api/notes"
-router.get("/", function (req, res) {
+router.get("/", isAuthenticated, function (req, res) {
   db.Note.find({})
     .then((dbModel) => res.json(dbModel))
     .catch((err) => res.status(422).json(err));
 });
 
-// router.post("/notes", function (req,res) {
-//   db.Note.create({
-//     topic: req.body.topic,
-//     url: req.body.url,
-//     notes: req.body.password,
-//   })
-//   .then(dbModel => res.json(dbModel))
-//   .catch(err => res.status(422).json(err));
-// })
+// Matches with "/api/notes"
+router.post("/", isAuthenticated, function (req,res) {
+  console.log(req.body);
+  db.Note.create({
+    topic: req.body.topic,
+    url: req.body.url,
+    body: req.body.body,
+  })
+  .then(dbModel => res.json(dbModel))
+  .catch(err => res.status(422).json(err));
+})
 
 // router.remove("/notes/id", function (req, res) {
 //   db.Note.remove.findById({ _id: req.params.id})
