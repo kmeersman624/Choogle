@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "W3Schools",
-        "image": "../client/src/images/testing123.png",
+        "image": "https://www.w3schools.com/",
         "content": "W3Schools - all around helpful go to site",
         "link": "https://www.w3schools.com/default.asp"
     },

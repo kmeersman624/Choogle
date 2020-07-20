@@ -20,44 +20,41 @@ class NoteCard extends Component {
     return (
       <>
         {this.props.notes.map((note) => (
-          <div className="row">
-            <div className="col s4">
-          <Card
-            actions={[
-              <Button
-                node="a"
-                small
-                style={{
-                  marginRight: "5px",
-                }}
-                waves="light"
-              >
-                Update
+          <div className="col s4">
+            <Card
+              actions={[
+                <Button
+                  node="a"
+                  small
+                  style={{
+                    marginRight: "5px",
+                  }}
+                  waves="light"
+                >
+                  Update
               </Button>,
-              <Button
-                node="a"
-                onClick={() => this.deleteNote(note._id)}
-                small
-                style={{
-                  marginRight: "5px",
-                }}
-                waves="light"
-              >
-                Delete
+                <Button
+                  node="a"
+                  onClick={() => this.deleteNote(note._id)}
+                  small
+                  style={{
+                    marginRight: "5px",
+                  }}
+                  waves="light"
+                >
+                  Delete
               </Button>,
-            ]}
-            className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
-            textClassName="white-text"
-            header={note.topic}
-            title={note.url}
-          >
-            {note.body}
-          </Card>
-
-            </div>
-            </div>
+              ]}
+              className="blue-grey darken-1"
+              closeIcon={<Icon>close</Icon>}
+              revealIcon={<Icon>more_vert</Icon>}
+              textClassName="white-text"
+              header={note.topic}
+              title={note.url}
+            >
+              {note.body}
+            </Card>
+          </div>
         ))}
       </>
     );
