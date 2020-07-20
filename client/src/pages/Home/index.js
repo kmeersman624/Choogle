@@ -13,7 +13,7 @@ export class Home extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <div className="container center">
           <Tilt
           direction="row"
@@ -22,7 +22,6 @@ export class Home extends Component {
           >
             <img className="mainlogo" src={logo} alt={logo}/>
           </Tilt>
-        </div>
           <Grid
             container
             direction="row"
@@ -49,7 +48,8 @@ export class Home extends Component {
               </Grid>
             ))}
           </Grid>
-      </div>
+        </div>
+      </>
     );
   }
 }
