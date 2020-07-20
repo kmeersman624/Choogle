@@ -31,17 +31,7 @@ class Header extends Component {
             preventScrolling: true,
           }}
         >
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              API.ping().then(function ({ data }) {
-                console.log(data);
-              });
-            }}
-            className="waves-effect waves-grey btn-flat"
-          >
-            <font styles="vertical-align: inherit;">Ping!</font>
-          </a>
+          
           <Link className="waves-effect waves-grey btn-flat" to="/">
             <font styles="vertical-align: inherit;">Home</font>
           </Link>
