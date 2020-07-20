@@ -1,28 +1,37 @@
 .aboutChoogle {
-    padding-top: 50px;
-    height: auto;
-    width: 20%;
+  padding-top: 50px;
+  height: auto;
+  width: 20%;
 }
 
 .cardImage {
-
-    height: auto;
-    width: 75%;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: auto;
+  width: 75%;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cardName {
-    height: auto;
-    width: 70%;
+  height: auto;
+  width: 70%;
 }
 
 .aboutChoogleFam {
-    height: auto;
-    width: 50%;
+  height: auto;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 98% !important;
+  }
+  .padding {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+  }
 }
