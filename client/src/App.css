@@ -1,30 +1,26 @@
-.responsive-img.circle{
-height: 250px;
-padding-bottom: 30px;
-margin-left: 50px;
+.responsive-img.circle {
+  height: 250px;
+  padding-bottom: 30px;
+  margin-left: 50px;
 }
 
-.aboutHeader{
+.aboutHeader {
   height: 50px;
-  
 }
 
-.card-panel{
+.card-panel {
   padding-bottom: 150px;
 }
 
-
-
-body{
-height: 100vh;
+body {
+  height: 100vh;
 }
 
-.chip{
+.chip {
   margin-left: 80px;
 }
 
-.mainlogo{
- height: 500px;
-margin-top: 20px;
-
+.mainlogo {
+  height: 500px;
+  margin-top: 20px;
 }

@@ -1,80 +1,79 @@
 [
-    {
-        "id": 1,
-        "name": "W3Schools",
-        "image": "../client/src/images/testing123.png",
-        "content": "W3Schools - all around helpful go to site",
-        "link": "https://www.w3schools.com/default.asp"
-    },
-    {
-        "id": 2,
-        "name": "HackerThemes",
-        "image": "../images/testing123.png",
-        "content": "HackerThemes - all around helpful go to site",
-        "link": "https://hackerthemes.com/bootstrap-cheatsheet/"
-    },
-    {
-        "id": 3,
-        "name": "Materialize Sandbox",
-        "image": "../../images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://www.pkcoder.net/staticpages/Materialize.html"
-    },
-    {
-        "id": 4,
-        "name": "Tobias Ahlin",
-        "image": "./images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://tobiasahlin.com/"
-    },
-    {
-        "id": 5,
-        "name": "Google Fonts",
-        "image": "./images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://fonts.google.com/?selection.family=Orbitron:wght@500%7CPermanent+Marker&sidebar.open"
-    },
-    {
-        "id": 6,
-        "name": "Keyboard Shortcuts",
-        "image": "./images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
-    },
-    {
-        "id": 7,
-        "name": "OverApi",
-        "image": "./images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://overapi.com/javascript"
-    },
-    {
-        "id": 8,
-        "name": "MarkDown Cheat Sheat",
-        "image": "./images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf"
-    },
-    {
-        "id": 9,
-        "name": "Git Cheat Sheat",
-        "image": "./images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://education.github.com/git-cheat-sheet-education.pdf"
-    },
-    {
-        "id": 10,
-        "name": "MDN Docs",
-        "image": "./testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://developer.mozilla.org/en-US/"
-    },
-    {
-        "id": 11,
-        "name": "Modern JavaScript",
-        "image": "./images/testing123.png",
-        "content": "all around helpful go to site",
-        "link": "https://javascript.info/"
-    }
-  
+  {
+    "id": 1,
+    "name": "W3Schools",
+    "image": "../client/src/images/testing123.png",
+    "content": "W3Schools - all around helpful go to site",
+    "link": "https://www.w3schools.com/default.asp"
+  },
+  {
+    "id": 2,
+    "name": "HackerThemes",
+    "image": "../images/testing123.png",
+    "content": "HackerThemes - all around helpful go to site",
+    "link": "https://hackerthemes.com/bootstrap-cheatsheet/"
+  },
+  {
+    "id": 3,
+    "name": "Materialize Sandbox",
+    "image": "../../images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://www.pkcoder.net/staticpages/Materialize.html"
+  },
+  {
+    "id": 4,
+    "name": "Tobias Ahlin",
+    "image": "./images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://tobiasahlin.com/"
+  },
+  {
+    "id": 5,
+    "name": "Google Fonts",
+    "image": "./images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://fonts.google.com/?selection.family=Orbitron:wght@500%7CPermanent+Marker&sidebar.open"
+  },
+  {
+    "id": 6,
+    "name": "Keyboard Shortcuts",
+    "image": "./images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
+  },
+  {
+    "id": 7,
+    "name": "OverApi",
+    "image": "./images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://overapi.com/javascript"
+  },
+  {
+    "id": 8,
+    "name": "MarkDown Cheat Sheat",
+    "image": "./images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf"
+  },
+  {
+    "id": 9,
+    "name": "Git Cheat Sheat",
+    "image": "./images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://education.github.com/git-cheat-sheet-education.pdf"
+  },
+  {
+    "id": 10,
+    "name": "MDN Docs",
+    "image": "./testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://developer.mozilla.org/en-US/"
+  },
+  {
+    "id": 11,
+    "name": "Modern JavaScript",
+    "image": "./images/testing123.png",
+    "content": "all around helpful go to site",
+    "link": "https://javascript.info/"
+  }
 ]

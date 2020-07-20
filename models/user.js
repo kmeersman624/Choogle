@@ -9,22 +9,22 @@ const UserSchema = new Schema({
     type: String,
     match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
     unique: true,
-    required: true
+    required: true,
   },
   password: {
     type: String,
     unique: true,
     required: true,
-    bcrypt: true
+    bcrypt: true,
   },
   notes: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Note"
-    }
-  ]
+      ref: "Note",
+    },
+  ],
 });
 
-UserSchema.plugin(require('mongoose-bcrypt'));
+UserSchema.plugin(require("mongoose-bcrypt"));
 
 module.exports = mongoose.model("User", UserSchema);
