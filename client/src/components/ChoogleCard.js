@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 200,
   },
 });
 
@@ -38,7 +38,7 @@ function ChoogleCard(props) {
       </CardActionArea>
       <CardActions>
         <Button href={props.link} size="small" color="primary">
-          CHOOGLE IT
+          SEE MORE
         </Button>
       </CardActions>
     </Card>
