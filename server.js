@@ -6,6 +6,7 @@ const path = require("path");
 const passport = require("./config/passport");
 const isAuthenticated = require("./config/middleware/isAuthenticated");
 
+
 const app = express();
 const PORT = process.env.PORT || 8080;
 

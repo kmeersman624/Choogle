@@ -7,6 +7,7 @@ import "./style.css";
 import SideComponent from "../SideComponent";
 
 class Header extends Component {
+
   render() {
     return (
       <>
@@ -49,9 +50,8 @@ class Header extends Component {
 
           <Link className="waves-effect waves-grey btn-flat" to="/about">
             <font styles="vertical-align: inherit;">About</font>
-
           </Link>
-            <SideComponent />
+          <SideComponent />
 
           <Link className="waves-effect waves-grey btn-flat" to="/contact">
             <font styles="vertical-align: inherit;">Contact</font>
