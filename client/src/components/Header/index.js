@@ -5,9 +5,7 @@ import API from "../../utils/API";
 import logo from "../../images/Choogle.png";
 import "./style.css";
 
-
 class Header extends Component {
-
   render() {
     return (
       <>

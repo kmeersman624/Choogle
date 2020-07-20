@@ -6,15 +6,16 @@ const path = require("path");
 const passport = require("./config/passport");
 const isAuthenticated = require("./config/middleware/isAuthenticated");
 
-
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 // mongoose connection
-mongoose.connect("mongodb://localhost/notesdb", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then( console.log("connected"));
+mongoose
+  .connect("mongodb://localhost/notesdb", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(console.log("connected"));
 
 // Parse req.body
 // Creating express app and configuring middleware needed for authentication
@@ -23,7 +24,9 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // We need to use sessions to keep track of our user's login status
-app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(
+  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
+);
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -33,9 +36,9 @@ app.use(morgan("dev"));
 // Register route
 app.use(require("./routes"));
 
-app.get("/ping", isAuthenticated, function(req, res){
-  res.send("Made it!")
-})
+app.get("/ping", isAuthenticated, function (req, res) {
+  res.send("Made it!");
+});
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));

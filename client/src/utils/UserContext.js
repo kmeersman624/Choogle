@@ -10,6 +10,6 @@ const UserProvider = ({ value = {}, children }) => {
 
 const useUserContext = () => {
   return useContext(UserContext);
-}
+};
 
 export { useUserContext, UserProvider };

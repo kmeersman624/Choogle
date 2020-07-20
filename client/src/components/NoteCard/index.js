@@ -17,53 +17,48 @@ class NoteCard extends Component {
       .catch((err) => console.log(err));
   };
   updateNote = (id) => {
-    API.updateNote(id, this.state)
-
-  }
-
+    API.updateNote(id, this.state);
+  };
 
   render() {
     return (
       <>
         {this.props.notes.map((note) => (
-          
-              <div className="col s4">
-          <Card
-            actions={[
-              <Button
-                node="a"
-                small
-                style={{
-                  marginRight: "5px",
-                }}
-                waves="light"
-              >
-                Update
-              </Button>,
-              <Button
-                node="a"
-                onClick={() => this.deleteNote(note._id)}
-                small
-                style={{
-                  marginRight: "5px",
-                }}
-                waves="light"
-              >
-                Delete
-              </Button>,
-            ]}
-            className="grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
-            textClassName="black-text"
-            header={note.topic}
-            title={note.url}
-          >
-            {note.body}
-          </Card>
-
-            </div>
-            
+          <div className="col s4">
+            <Card
+              actions={[
+                <Button
+                  node="a"
+                  small
+                  style={{
+                    marginRight: "5px",
+                  }}
+                  waves="light"
+                >
+                  Update
+                </Button>,
+                <Button
+                  node="a"
+                  onClick={() => this.deleteNote(note._id)}
+                  small
+                  style={{
+                    marginRight: "5px",
+                  }}
+                  waves="light"
+                >
+                  Delete
+                </Button>,
+              ]}
+              className="grey darken-1"
+              closeIcon={<Icon>close</Icon>}
+              revealIcon={<Icon>more_vert</Icon>}
+              textClassName="black-text"
+              header={note.topic}
+              title={note.url}
+            >
+              {note.body}
+            </Card>
+          </div>
         ))}
       </>
     );
