@@ -20,6 +20,8 @@ class NoteCard extends Component {
     return (
       <>
         {this.props.notes.map((note) => (
+          <div className="row">
+            <div className="col s4">
           <Card
             actions={[
               <Button
@@ -53,6 +55,9 @@ class NoteCard extends Component {
           >
             {note.body}
           </Card>
+
+            </div>
+            </div>
         ))}
       </>
     );

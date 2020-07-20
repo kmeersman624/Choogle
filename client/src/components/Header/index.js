@@ -51,7 +51,7 @@ class Header extends Component {
           <Link className="waves-effect waves-grey btn-flat" to="/about">
             <font styles="vertical-align: inherit;">About</font>
           </Link>
-          <Link className="waves-effect waves-grey btn-flat" to="/contact">
+          <Link className="waves-effect waves-grey btn-flat" to="/notes">
             <font styles="vertical-align: inherit;">Notes</font>
           </Link>
 
