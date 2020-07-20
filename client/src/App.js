@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import SignUp from "./pages/SignUp";
 import LogIn from "./pages/LogIn";
 import PrivateRoute from "./utils/PrivateRoute";
+import Notes from "./pages/Notes";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <PrivateRoute exact path="/" component={Home} />
       <PrivateRoute exact path="/about" component={About} />
+      <Route exact path="/notes" component={Notes} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/signup" component={SignUp} />
       <Route exact path="/login" component={LogIn} />

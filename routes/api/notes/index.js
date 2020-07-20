@@ -3,14 +3,14 @@ const db = require("../../../models");
 const isAuthenticated = require("../../../config/middleware/isAuthenticated");
 
 // Matches with "/api/notes"
-router.get("/", isAuthenticated, function (req, res) {
+router.get("/notes", isAuthenticated, function (req, res) {
   db.Note.find({})
     .then((dbModel) => res.json(dbModel))
     .catch((err) => res.status(422).json(err));
 });
 
 // Matches with "/api/notes"
-router.post("/", isAuthenticated, function (req, res) {
+router.post("/notes", isAuthenticated, function (req, res) {
   console.log(req.body);
   db.Note.create({
     topic: req.body.topic,
@@ -21,7 +21,7 @@ router.post("/", isAuthenticated, function (req, res) {
     .catch((err) => res.status(422).json(err));
 });
 
-router.delete("/:id", function (req, res) {
+router.delete("/notes:id", function (req, res) {
   console.log("delete route");
   db.Note.
     findById({ _id: req.params.id })
