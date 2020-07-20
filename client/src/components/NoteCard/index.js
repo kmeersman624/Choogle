@@ -4,45 +4,24 @@ import API from "../../utils/API";
 
 class NoteCard extends Component {
   state = {
-    notes: [],
     topic: "",
     url: "",
     body: "",
   };
 
-  componentDidMount() {
-    this.loadNotes();
-  }
-
-  loadNotes = () => {
-    API.getNotes()
-      .then((res) => this.setState({ notes: res.data }))
-      .catch((err) => console.log(err));
-  };
-
   // Deletes a note from the database with a given id, then reloads notes from the db
   deleteNote = (id) => {
     API.deleteNote(id)
-      .then((res) => this.loadNotes())
+      .then((res) => this.props.loadNotes())
       .catch((err) => console.log(err));
   };
 
   render() {
     return (
       <>
-        {this.state.notes.map((note) => (
+        {this.props.notes.map((note) => (
           <Card
             actions={[
-              <Button
-                node="a"
-                small
-                style={{
-                  marginRight: "5px",
-                }}
-                waves="light"
-              >
-                Save
-              </Button>,
               <Button
                 node="a"
                 small
@@ -55,7 +34,7 @@ class NoteCard extends Component {
               </Button>,
               <Button
                 node="a"
-                onClick={this.deleteNote}
+                onClick={() => this.deleteNote(note._id)}
                 small
                 style={{
                   marginRight: "5px",

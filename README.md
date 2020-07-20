@@ -1,7 +1,8 @@
 # Choogle
 
   ## Description
-  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will also be able to access articles through Google serach bar and store into their own user database for easy and quick reference in one convenient location.
+  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will also be able to access articles through Google search bar and store into their own user database for easy and quick reference in one convenient location.
+  
 
   Link to deployed application: https://chooglefoo.herokuapp.com/
 

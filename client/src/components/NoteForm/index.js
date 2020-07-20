@@ -3,7 +3,6 @@ import API from "../../utils/API";
 
 class Form extends Component {
     state = {
-        notes: [],
         topic: "",
         url: "",
         body: "",
@@ -21,7 +20,8 @@ class Form extends Component {
           url: this.state.url,
           body: this.state.body,
         };
-        API.saveNote(noteObj);
+        API.saveNote(noteObj)
+        .then(() => {this.props.loadNotes()} )
       };
 
     render() {
