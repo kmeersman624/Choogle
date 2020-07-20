@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Icon } from "react-materialize";
-import API from "../../utils/API";
 import logo from "../../images/Choogle.png";
 import "./style.css";
 
@@ -20,7 +19,7 @@ class Header extends Component {
             </Link>
           }
           id="mobile-nav"
-          menuIcon={<Icon>menu</Icon>}
+          menuIcon={<a class="btn-floating btn-large pulse"><i class="material-icons">apps</i></a>}
           options={{
             draggable: true,
             edge: "left",
@@ -34,22 +33,22 @@ class Header extends Component {
           }}
         >
           
-          <Link className="waves-effect waves-grey btn-flat" to="/">
+          <Link className="waves-effect waves-teal btn-flat" to="/">
             <font styles="vertical-align: inherit;">Home</font>
           </Link>
 
-          <Link className="waves-effect waves-grey btn-flat" to="/about">
+          <Link className="waves-effect waves-teal btn-flat" to="/about">
             <font styles="vertical-align: inherit;">About</font>
           </Link>
-          <Link className="waves-effect waves-grey btn-flat" to="/notes">
+          <Link className="waves-effect waves-teal btn-flat" to="/notes">
             <font styles="vertical-align: inherit;">Notes</font>
           </Link>
 
-          <Link className="waves-effect waves-grey btn-flat" to="/contact">
+          <Link className="waves-effect waves-teal btn-flat" to="/contact">
             <font styles="vertical-align: inherit;">Contact</font>
           </Link>
 
-          <Link className="waves-effect waves-grey btn-flat" to="/logout">
+          <Link className="waves-effect waves-teal btn-flat" to="/logout">
             <font styles="vertical-align: inherit;">Logout</font>
           </Link>
         </Navbar>
