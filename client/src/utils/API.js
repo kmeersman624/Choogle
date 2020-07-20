@@ -21,7 +21,7 @@ export default {
     return axios.get("/ping");
   },
   //Updates a note in the database
-  updateNote: function(id){
-    return axios.update("/api/notes/", + id);
+  updateNote: function(id, note){
+    return axios.put("/api/notes/", + id, note);
   }
 };

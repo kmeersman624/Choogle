@@ -32,15 +32,15 @@ router.delete("/:id", function (req, res) {
     .catch((err) => res.status(422).json(err));
 });
 
-// router.findOneAndUpdate("/:id", function (req, res) {
-//   console.log("update route");
-//   db.Note.update({ _id: req.params.id })
-//     .then((dbModel) => {
-//       dbModel.update();
-//     })
-//     .then((dbModel) => res.json(dbModel))
-//     .catch((err) => res.status(422).json(err));
-// });
+router.put("/:id", function (req, res) {
+  console.log("update route");
+  db.Note.findByIdAndUpdate(req.params.id, req.body)
+    .then((dbModel) => {
+      dbModel.update();
+    })
+    .then((dbModel) => res.json(dbModel))
+    .catch((err) => res.status(422).json(err));
+});
 
 // Matches with "/api/notes/:id"
 // router
