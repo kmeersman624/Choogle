@@ -42,11 +42,5 @@ router.put("/:id", function (req, res) {
     .catch((err) => res.status(422).json(err));
 });
 
-// Matches with "/api/notes/:id"
-// router
-//   .route("/:id")
-//   .get(notesController.findById)
-//   .put(notesController.update)
-//   .delete(notesController.remove);
 
 module.exports = router;

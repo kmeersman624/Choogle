@@ -3,28 +3,23 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/notesdb"
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/notesdb");
 
 const noteSeed = [
   {
     topic: "CSS",
     url: "w3schools.com",
-    body:
-      'CSS makes things look pretty.',
+    body: "CSS makes things look pretty.",
   },
   {
     topic: "HTML",
     url: "w3schools.com",
-    body:
-      "The skeleton of the internet.",
+    body: "The skeleton of the internet.",
   },
   {
     topic: "React",
     url: "reactjs.org",
-    body:
-      "Front end framework created by some dude at Facebook.",
+    body: "Front end framework created by some dude at Facebook.",
   },
 ];
 

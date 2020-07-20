@@ -1,10 +1,8 @@
-.grey.darken-1.card{
-    font-size: x-large
-    !important;
-    background-color: rgb(188, 182, 182)
-    !important;
+.grey.darken-1.card {
+  font-size: x-large !important;
+  background-color: rgb(188, 182, 182) !important;
 }
 
-.card-title{
-    color: blue;
+.card-title {
+  color: blue;
 }

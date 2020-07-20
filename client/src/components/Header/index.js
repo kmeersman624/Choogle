@@ -4,9 +4,7 @@ import { Navbar, Icon } from "react-materialize";
 import logo from "../../images/Choogle.png";
 import "./style.css";
 
-
 class Header extends Component {
-
   render() {
     return (
       <>
