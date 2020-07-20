@@ -27,12 +27,15 @@ class Notes extends Component {
       render() {
           return (
               <div>
-                  <div classname="container">
+                  <div classname="container center">
                   <Form  loadNotes={() => this.loadNotes()}/>
+                  <div className="row">
                   <NoteCard
             notes={this.state.notes}
             loadNotes={() => this.loadNotes()}
           />
+
+                  </div>
                   </div>
               </div>
           )
