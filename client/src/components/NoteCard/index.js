@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button, Icon } from "react-materialize";
 import API from "../../utils/API";
+import "./styles.css";
 
 class NoteCard extends Component {
   state = {
@@ -25,6 +26,7 @@ class NoteCard extends Component {
     return (
       <>
         {this.props.notes.map((note) => (
+<<<<<<< HEAD
           <div className="col s4">
             <Card
               actions={[
@@ -37,6 +39,21 @@ class NoteCard extends Component {
                   waves="light"
                 >
                   Update
+=======
+          
+              <div className="col s4">
+          <Card
+            actions={[
+              <Button
+                node="a"
+                small
+                style={{
+                  marginRight: "5px",
+                }}
+                waves="light"
+              >
+                Update
+>>>>>>> c37f2be6141ce989f4f1a556c415e20d43de71f5
               </Button>,
                 <Button
                   node="a"
@@ -49,6 +66,7 @@ class NoteCard extends Component {
                 >
                   Delete
               </Button>,
+<<<<<<< HEAD
               ]}
               className="blue-grey darken-1"
               closeIcon={<Icon>close</Icon>}
@@ -60,6 +78,21 @@ class NoteCard extends Component {
               {note.body}
             </Card>
           </div>
+=======
+            ]}
+            className="grey darken-1"
+            closeIcon={<Icon>close</Icon>}
+            revealIcon={<Icon>more_vert</Icon>}
+            textClassName="black-text"
+            header={note.topic}
+            title={note.url}
+          >
+            {note.body}
+          </Card>
+
+            </div>
+            
+>>>>>>> c37f2be6141ce989f4f1a556c415e20d43de71f5
         ))}
       </>
     );
