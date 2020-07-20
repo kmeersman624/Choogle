@@ -1,51 +1,62 @@
-import React from 'react'
+import React, { Component } from "react";
+import { SideNav, SideNavItem } from "react-materialize";
+import welcome from "../../images/welcome.png";
+import circlelogo from "../../images/chooglelogo.png";
+import NoteCard from "../NoteCard";
+import Form from "../NoteForm";
 
-import { Icon, Button, SideNav, SideNavItem } from 'react-materialize'
-
-export default function SideComponent() {
-    return (
-        <>
+class SideComponent extends Component {
+    
+    render() {
+        return (
             <SideNav
+                className="sideNavWidth waves-effect waves-grey btn-flat"
                 id="SideNav-10"
                 options={{
                     draggable: true,
-                    edge: "right"
+                    edge: "right",
+                    scrollable: true,
                 }}
                 trigger={
-                    <Button
-                        className="btn-large green notesBtn"
-                        floating
-                        icon={<Icon className="fontSize">Notes</Icon>}
-                        node="button"
-                    />
+                    <a href="#" className="waves-effect waves-grey btn-flat">
+                        <font className="notesTEXT" styles="vertical-align: inherit;">
+                            Notes
+            </font>
+                    </a>
                 }
             >
-                <SideNavItem
-                    user={{
-                        background: '',
-
-                        name: 'John Doe',
-                        email: 'jdandturk@gmail.com'
-                    }}
-                    userView
-                />
-                <SideNavItem
-
-                >
-                    Saved Notes
-                        </SideNavItem>
-
-                <SideNavItem divider />
-                <SideNavItem subheader>
-                    Resources
-                        </SideNavItem>
-                <SideNavItem
-                    href="#!third"
-                    waves
-                >
-                    Saved Links
+                <SideNavItem className="col s12 center-align">
+                    <img src={welcome} alt={welcome} height="50px" />
+                </SideNavItem>
+                <div className="row">
+                    <SideNavItem className="col s12">
+                        <div className="row">
+                            <div className="col s6 left-align">
+                                <img src={circlelogo} alt={circlelogo} height="200px" />
+                            </div>
+                            <div className="col s6">
+                                <div className="row">
+                                    <div className="col s12 marginTop">Username: Choogle Foo</div>
+                                    <div className="col s12">Email: chooglefoo@gmail.com</div>
+                                </div>
+                     <Form />
+                            </div>
+                        </div>
                     </SideNavItem>
-            </SideNav>
-        </>
-    )
+                </div>
+                <div className="row">
+                    <SideNavItem>
+                        <h2>Notes:</h2>
+                    <SideNavItem divider />   
+                    </SideNavItem>
+                </div>
+                <div className="row">
+                   <NoteCard />
+                    </div>
+                </SideNav>
+            
+        );
+    }
 }
+
+export default SideComponent;
