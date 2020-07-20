@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:8080/",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -15,7 +16,7 @@
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
     "react-materialize": "^3.9.2",
-    "react-parallax-tilt": "^1.4.58",
+    "react-parallax-tilt": "^1.4.59",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27"

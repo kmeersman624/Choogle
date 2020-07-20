@@ -1,21 +1,57 @@
-import React from "react";
+import React, { Component } from "react";
+import Grid from '@material-ui/core/Grid';
 import Tilt from "react-parallax-tilt";
 import logo from "../../images/chooglelogo.png";
 import 'materialize-css';
-import { useUserContext } from "../../utils/UserContext";
-// import { Button, Card, Row, Col } from 'react-materialize';
+import ChoogleCard from '../../components/ChoogleCard';
+import helpfulLinks from "../../helpfulLinks.json";
 
+export class Home extends Component {
+  state = {
+    helpfulLinks,
+  };
 
-function Home(props) {
-  console.log(useUserContext());
-  return (
-    <div>
-      <div className="container center">
-        <Tilt><img className="mainlogo" src={logo} alt={logo}/></Tilt>
-      </div> 
-      
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        <div className="container center">
+          <Tilt
+          direction="row"
+          justify="center"
+          alignItems="center"
+          >
+            <img className="mainlogo" src={logo} alt={logo}/>
+          </Tilt>
+        </div>
+          <Grid
+            container
+            direction="row"
+            justify="center"
+            alignItems="center"
+            spacing={10}
+            style={{paddingLeft: '25px', padding: '35px'}}
+          >
+
+            {this.state.helpfulLinks.map((helpfulLink) => (
+              <Grid
+              key={helpfulLinks.id}
+              item 
+              xs={12} sm={6} md={4} lg={4} xl={3}
+              >
+                <ChoogleCard 
+                  id={helpfulLink.id}
+                  key={helpfulLink.id}
+                  name={helpfulLink.content}
+                  image={helpfulLink.image}
+                  content={helpfulLink.name}
+                  link={helpfulLink.link}
+                />
+              </Grid>
+            ))}
+          </Grid>
+      </div>
+    );
+  }
 }
 
 export default Home;
