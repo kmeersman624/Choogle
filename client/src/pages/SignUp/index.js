@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Container, Col, Row, Button } from "react-materialize";
-import signin from "../../images/SignInLink.png";
+import signup from "../../images/SignUp.png";
 import axios from "axios";
 import "../SignUp/styles.css";
 import { useUserContext } from "../../utils/UserContext";
@@ -32,7 +32,7 @@ function SignUp(props) {
       <Row>
         <Col className="s4" />
         <form className="col s4 center margin-top" onSubmit={submitHandler}>
-          <img className="signin" alt="" src={signin} />
+          <img className="signin" alt="" src={signup} />
           <input
             size="60"
             id="TextInput-6"

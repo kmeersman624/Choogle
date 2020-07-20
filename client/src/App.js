@@ -20,7 +20,7 @@ function App() {
       <Header />
       <PrivateRoute exact path="/" component={Home} />
       <PrivateRoute exact path="/about" component={About} />
-      <Route exact path="/notes" component={Notes} />
+      <PrivateRoute exact path="/notes" component={Notes} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/signup" component={SignUp} />
       <Route exact path="/login" component={LogIn} />
