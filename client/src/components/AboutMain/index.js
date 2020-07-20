@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 import about from "../../images/AboutLink.png";
 import dan from "../../images/danny.jpeg";
 import kate from "../../images/kate.jpeg";
@@ -11,26 +12,34 @@ import MikeName from "../../images/MikeName.png";
 import ChoogleFam from "../../images/ChoogleFam.png";
 export default function index() {
     return (
-        <div>
+        <>
             <div className="row center">
                 <span><img className="aboutHeader aboutChoogle" alt="about img" src={about} /></span>
             </div>
             <div className="row center">
-                <h6>Here at Choogle, we wanted to bring you a simple information based note taking application that’s primary target audience is someone beginning their web development journey.</h6>
-
-                <h6>Choogle can be used by anyone, if you need a space to save dedicated links to websites and want to make notes about what information you need to go back to for your projects and keep them all in one place, this is for you.</h6>
-
-                <h6>All members of the Choogle team, graduated from the UofA Coding Bootcamp, and the links that we provide on the site, are all great go to resources that helped us all develop into the developers we are today.</h6>
-
-                <h6>We all hope to provide ongoing knowledge and resources through our Blog page and look forward to hearing from you if you have questions.</h6>
-
-                <h6>We appreciate you taking the time to take a look at our site, and if you're just getting started with your development career, stay focused, stay patient, and good luck.</h6>
-                <br></br>
-                <div className="row center">
-                    <span><img className="aboutHeader aboutChoogleFam" src={ChoogleFam} alt={ChoogleFam} /></span>
+                <div className="col s12 padding">
+                    <h5>
+                        Here at Choogle, we wanted to bring you a simple information based note taking application that’s primary target audience is someone beginning their web development journey.
+                    <br/>
+                    <br/>
+                    Choogle can be used by anyone, if you need a space to save dedicated links to websites and want to make notes about what information you need to go back to for your projects and keep them all in one place, this is for you.
+                    <br/>
+                    <br/>
+                    All members of the Choogle team, graduated from the UofA Coding Bootcamp, and the links that we provide on the site, are all great go to resources that helped us all develop into the developers we are today.
+                    <br/>
+                    <br/>
+                    We all hope to provide ongoing knowledge and resources through our Blog page and look forward to hearing from you if you have questions.
+                    <br/>
+                    <br/>
+                    We appreciate you taking the time to take a look at our site, and if you're just getting started with your development career, stay focused, stay patient, and good luck.
+                </h5>
+                    <br/>
+                    <div className="row center">
+                        <span><img className="aboutHeader aboutChoogleFam" src={ChoogleFam} alt={ChoogleFam} /></span>
+                    </div>
+                    <br/>
+                    <br/>
                 </div>
-                <br></br>
-                <br></br>
             </div>
             <div className="row">
                 <div class="col xs12 s6 m=6 l3">
@@ -81,7 +90,6 @@ export default function index() {
                         </div>
                     </div>
                 </div>
-
                 <div class="col xs12 s6 m=6 l3">
                     <div class="card large round">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -98,9 +106,8 @@ export default function index() {
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
+        </>
     )
 }
 

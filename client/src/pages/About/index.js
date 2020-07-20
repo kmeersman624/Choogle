@@ -7,7 +7,7 @@ import './about.css'
 
 function About() {
   return (
-    <div>
+    <div className="container">
       <AboutMain/>
     </div>
   );
