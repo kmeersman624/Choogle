@@ -6,7 +6,14 @@ import NoteCard from "../NoteCard";
 import Form from "../NoteForm";
 
 class SideComponent extends Component {
-    
+    state = {
+        email: [],
+      };
+      
+    handleChange = (event) => {
+        const { name, value } = event.target;
+        this.setState({ [name]: value });
+      };
     render() {
         return (
             <SideNav
@@ -36,8 +43,7 @@ class SideComponent extends Component {
                             </div>
                             <div className="col s6">
                                 <div className="row">
-                                    <div className="col s12 marginTop">Username: Choogle Foo</div>
-                                    <div className="col s12">Email: chooglefoo@gmail.com</div>
+                                    <div className="col s12">Email: {this.state.email}</div>
                                 </div>
                      <Form />
                             </div>

@@ -41,16 +41,6 @@ class NoteCard extends Component {
                 }}
                 waves="light"
               >
-                Save
-              </Button>,
-              <Button
-                node="a"
-                small
-                style={{
-                  marginRight: "5px",
-                }}
-                waves="light"
-              >
                 Update
               </Button>,
               <Button
