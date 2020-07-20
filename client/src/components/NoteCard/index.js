@@ -15,6 +15,11 @@ class NoteCard extends Component {
       .then((res) => this.props.loadNotes())
       .catch((err) => console.log(err));
   };
+  updateNote = (id) => {
+    API.updateNote(id, this.state)
+
+  }
+
 
   render() {
     return (
