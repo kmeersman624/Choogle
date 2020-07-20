@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button, Icon } from "react-materialize";
 import API from "../../utils/API";
+import "./styles.css";
 
 class NoteCard extends Component {
   state = {
@@ -25,8 +26,8 @@ class NoteCard extends Component {
     return (
       <>
         {this.props.notes.map((note) => (
-          <div className="row">
-            <div className="col s4">
+          
+              <div className="col s4">
           <Card
             actions={[
               <Button
@@ -51,10 +52,10 @@ class NoteCard extends Component {
                 Delete
               </Button>,
             ]}
-            className="blue-grey darken-1"
+            className="grey darken-1"
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
-            textClassName="white-text"
+            textClassName="black-text"
             header={note.topic}
             title={note.url}
           >
@@ -62,7 +63,7 @@ class NoteCard extends Component {
           </Card>
 
             </div>
-            </div>
+            
         ))}
       </>
     );
