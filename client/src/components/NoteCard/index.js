@@ -56,7 +56,7 @@ class NoteCard extends Component {
             header={note.topic}
             title={note.url}
           >
-            {note.notes}
+            {note.body}
           </Card>
         ))}
       </>
