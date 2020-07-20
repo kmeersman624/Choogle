@@ -19,5 +19,9 @@ export default {
   },
   ping: function(){
     return axios.get("/ping");
+  },
+  //Updates a note in the database
+  updateNote: function(id){
+    return axios.update("/api/notes/", + id);
   }
 };
