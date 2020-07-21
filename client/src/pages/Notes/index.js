@@ -27,19 +27,19 @@ class Notes extends Component {
 
   render() {
     return (
-      <div classname="container center">
-        <div className="row">
-          <div className="col s12 m8 notes z-depth-5">
+      <div className="container">
+        <div className="row center">
+          <div className="col s12 notes z-depth-5">
             <img className="notes2" src={notes} />
             <Form loadNotes={() => this.loadNotes()} />
           </div>
-          <div className="row">
-            <div className="col s12 cards">
-              <NoteCard
-                notes={this.state.notes}
-                loadNotes={() => this.loadNotes()}
-              />
-            </div>
+        </div>
+        <div className="row">
+          <div className="col s12 cards">
+            <NoteCard
+              notes={this.state.notes}
+              loadNotes={() => this.loadNotes()}
+            />
           </div>
         </div>
       </div>
