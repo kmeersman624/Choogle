@@ -39,8 +39,6 @@ export class AboutMain extends Component {
                         <div className="row center">
                             <span><img className="aboutHeader aboutChoogleFam" src={ChoogleFam} alt={ChoogleFam} /></span>
                         </div>
-                        <br/>
-                        <br/>
                     </div>
                 </div>
                     <Grid
@@ -55,7 +53,7 @@ export class AboutMain extends Component {
                             <Grid
                                 key={teamProfiles.id}
                                 item 
-                                xs={12} sm={6} md={6} lg={4} xl={4}
+                                xs={12} sm={6} md={6} lg={4} xl={3}
                             >
                                 <ChoogleCard 
                                 id={teamProfile.id}
