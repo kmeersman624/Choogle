@@ -1,7 +1,7 @@
 # Choogle
 
   ## Description
-  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will have access to favorite cheatshets from chooglers on home page, in addition to being able to save their own URLs and notes on the notes page. Deveopers can use Choogle as a place to store links and documents for quick reference in one convenient location.
+  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will have access to favorite cheatsheets from chooglers on home page, in addition to being able to save their own URLs and notes on the notes page. Developers can use Choogle as a place to store links and documents for quick reference in one convenient location.
   
 
   Link to deployed application: https://chooglefoo.herokuapp.com/
@@ -9,14 +9,13 @@
   ![GitHub repo size](https://img.shields.io/github/repo-size/kmeersman624/Choogle)
 
   ## Table of Contents
+  * [Video](#video)
   * [Proposal](#proposal)
   * [Usage](#usage)
-  * [Images](#images)
-  * [Video](#video)
-  * [License](#license)
   * [Contributing](#contributing)
   * [Challenges](#challenges) 
   * [Future Development](#future_development)
+  * [License](#license)
 
   ## Built With
   * HTML
@@ -27,12 +26,8 @@
   * Node.js
   * Express, Passport, bcryptjs, Mongoose packages
   
-  ## Images
-
-  ![image of logo](/client/src/images/chooglelogo.png)
-
   ## Video
-    Coming Soon...
+  ![video of test](/client/src/images/choogledemo.gif)
     
   ## Proposal
   Check out our proposal for Choogle: https://docs.google.com/document/d/1NOvqD2pX30HPfyAERAev6cQqq3fbbZy4Xki1t8Y42Ps/edit#
@@ -41,11 +36,6 @@
   As a Developer
   I WANT to be able to easily access documents and code resources in one location
   SO THAT I can easily find information for errors, debugging, and general knowledge.
-
-  ## License
-  © 2020 Choogle Brand. All Rights Reserved.
-
-  ![GitHub](https://img.shields.io/github/license/kmeersman624/Choogle)
 
   ## Contributing
   Kate Meersman, Marcus Travis, Danny Molina-Power, Mike Zlotkowski
@@ -60,3 +50,8 @@
   * Turn web page into a PWA so that it is accesible offline
   * Add a blog
   * Add ability for user to create a card on home page out of a saved note
+
+  ## License
+  © 2020 Choogle Brand. All Rights Reserved.
+
+  ![GitHub](https://img.shields.io/github/license/kmeersman624/Choogle)
