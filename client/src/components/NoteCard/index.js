@@ -1,34 +1,34 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
+// import { useTodoContext } from "../../utils/GlobalState";
 import { Card, Button, Icon } from "react-materialize";
 import API from "../../utils/API";
 import "./styles.css";
 
-class NoteCard extends Component {
-  state = {
-    topic: "",
-    url: "",
-    body: "",
-  };
+function NoteCard() {
+  // const [state, dispatch] = useTodoContext();
+  // state = {
+  //   editMode: false,
+  //   topic: "",
+  //   url: "",
+  //   body: "",
+  // };
 
   // Deletes a note from the database with a given id, then reloads notes from the db
-  deleteNote = (id) => {
-    API.deleteNote(id)
-      .then((res) => this.props.loadNotes())
-      .catch((err) => console.log(err));
-  };
-  updateNote = (id) => {
-    API.updateNote(id, this.state)
+  // deleteNote = (id) => {
+  //   API.deleteNote(id)
+  //     .then((res) => this.props.loadNotes())
+  //     .catch((err) => console.log(err));
+  // };
+  // updateNote = (id) => {
+  //   API.updateNote(id, this.state)
+  // }
 
-  }
-
-
-  render() {
     return (
       <>
-        {this.props.notes.map((note) => (
-<<<<<<< HEAD
+        {this.props.notes.map((note, i) => (
           <div className="col s4">
             <Card
+              key={i}
               actions={[
                 <Button
                   node="a"
@@ -39,34 +39,16 @@ class NoteCard extends Component {
                   waves="light"
                 >
                   Update
-=======
-          
-              <div className="col s4">
-          <Card
-            actions={[
-              <Button
-                node="a"
-                small
-                style={{
-                  marginRight: "5px",
-                }}
-                waves="light"
-              >
-                Update
->>>>>>> c37f2be6141ce989f4f1a556c415e20d43de71f5
               </Button>,
                 <Button
                   node="a"
                   onClick={() => this.deleteNote(note._id)}
                   small
-                  style={{
-                    marginRight: "5px",
-                  }}
+                  style={{ marginRight: "5px" }}
                   waves="light"
                 >
                   Delete
               </Button>,
-<<<<<<< HEAD
               ]}
               className="blue-grey darken-1"
               closeIcon={<Icon>close</Icon>}
@@ -75,28 +57,70 @@ class NoteCard extends Component {
               header={note.topic}
               title={note.url}
             >
-              {note.body}
+              <EditableInput
+                text={note.body}
+                onChange={(e) => console.log("CHANGING")}
+              />
             </Card>
           </div>
-=======
-            ]}
-            className="grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
-            textClassName="black-text"
-            header={note.topic}
-            title={note.url}
-          >
-            {note.body}
-          </Card>
-
-            </div>
-            
->>>>>>> c37f2be6141ce989f4f1a556c415e20d43de71f5
         ))}
       </>
     );
-  }
+}
+
+function EditableInput(props) {
+  const [show, setShow] = useState(false);
+  return (
+    <>
+      <span
+        style={{ display: !show ? "inline-block" : "none" }}
+        onClick={() => setShow(!show)}
+      >
+        {props.text}
+      </span>
+      <input
+        style={{ display: show ? "inline-block" : "none" }}
+        value={props.text}
+        onChange={props.onChange}
+      />
+    </>
+  );
 }
 
 export default NoteCard;
+
+
+{/* {this.state.editMode ? (
+  <div>
+    <input
+      key={i}
+      value={this.state.body}
+      onChange={e => this.setState({ body: e.target.value })}
+    />
+  </div>
+) : (
+    <>
+      {note.body}
+    </>
+  )
+} */}
+
+{/* <div>
+  {this.state.editMode ? (
+    <div>
+            <input
+              value={this.state.firstName}
+              onChange={e => this.setState({ firstName: e.target.value })}
+            />
+            <input
+              value={this.state.lastName}
+              onChange={e => this.setState({ lastName: e.target.value })}
+            />
+            <button onClick={() => this.sendData()}>Save</button>
+          </div>
+        ) : (
+          <div onClick={() => this.setState({ editMode: true })}>
+            {this.props.name.firstName} {this.props.name.lastName}
+          </div>
+        )}
+      </div> */}
