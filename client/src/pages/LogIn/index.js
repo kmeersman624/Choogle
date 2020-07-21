@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Container, Col, Row, Button } from "react-materialize";
+import { Col, Row, Button } from "react-materialize";
 import login from "../../images/LoginLink.png";
 import axios from "axios";
 import "../LogIn/styles.css";
@@ -28,14 +28,13 @@ function LogIn(props) {
   };
 
   return (
-    <Container className="container-fluid">
+    <div className="container center">
       <Row>
-        <Col className="s4" />
-        <form className="col s4 center margin-top" onSubmit={submitHandler}>
+        <Col className="s12 m6" />
+        <form className="loginform" onSubmit={submitHandler}>
           <img className="signin" alt="login" src={login} />
           <input
-            size="60"
-            id="TextInput-6"
+            type="text"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -43,8 +42,6 @@ function LogIn(props) {
           />
           <input
             type="password"
-            size="60"
-            id="TextInput-4"
             name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -54,16 +51,15 @@ function LogIn(props) {
             Submit
           </Button>
           <Row>
-            <Col className="s12 margin-top">
+            <Col className="s12">
               <h5>
-                Login in or Sign Up <Link to="/signup">here!</Link>
+                 or Sign Up <Link to="/signup">here!</Link>
               </h5>
             </Col>
           </Row>
         </form>
-        <Col className="s4" />
       </Row>
-    </Container>
+    </div>
   );
 }
 

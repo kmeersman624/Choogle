@@ -1,9 +1,18 @@
 .notes{
-    align-items: center;
-  border: 1px solid black;
+    /* align-items: center; */
+  border: 3px solid teal;
   border-radius: 10px;
-  margin-top: 150px;
-  margin-left: 132px
-  !important;
+  margin-top: 30px;
+ margin-left: 10px
+ !important;
+ 
+  
 }
 
+.notes2{
+  height: 90px;
+}
+
+.cards{
+  margin-top: 60px;
+}

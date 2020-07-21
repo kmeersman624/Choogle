@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Form from "../../components/NoteForm";
 import NoteCard from "../../components/NoteCard";
 import API from "../../utils/API";
-import notes from "../../images/NotesLink.png"
+import notes from "../../images/NotesLink.png";
 import "./styles.css";
 
 class Notes extends Component {
@@ -27,23 +27,22 @@ class Notes extends Component {
 
   render() {
     return (
-      
-        <div classname="container center">
-          <div className="row">
-            <div className="col s8 notes z-depth-5">
-              <img classname="notes2" src={notes} />
-          <Form loadNotes={() => this.loadNotes()} />
-          <div className="row">
-            <NoteCard
-              notes={this.state.notes}
-              loadNotes={() => this.loadNotes()}
-            />
+      <div classname="container center">
+        <div className="row">
+          <div className="col s12 m8 notes z-depth-5">
+            <img className="notes2" src={notes} />
+            <Form loadNotes={() => this.loadNotes()} />
           </div>
-
+          <div className="row">
+            <div className="col s12 cards">
+              <NoteCard
+                notes={this.state.notes}
+                loadNotes={() => this.loadNotes()}
+              />
             </div>
           </div>
         </div>
-      
+      </div>
     );
   }
 }

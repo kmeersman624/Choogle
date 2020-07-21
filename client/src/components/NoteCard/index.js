@@ -24,7 +24,7 @@ class NoteCard extends Component {
     return (
       <>
         {this.props.notes.map((note) => (
-          <div className="col s4">
+          <div className="col s12 m6">
             <Card
               actions={[
                 <Button
@@ -49,7 +49,7 @@ class NoteCard extends Component {
                   Delete
                 </Button>,
               ]}
-              className="grey darken-1"
+              className="grey darken-1 container z-depth-5"
               closeIcon={<Icon>close</Icon>}
               revealIcon={<Icon>more_vert</Icon>}
               textClassName="black-text"
