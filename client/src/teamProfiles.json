@@ -2,28 +2,28 @@
     {
         "id": 1,
         "name": "Daniel Molina-Power",
-        "image": "/images/testing123.png",
+        "image": "/images/dmp.png",
         "content": "asdf",
         "link": "https://www.linkedin.com/in/daniel-molina-power"
     }, 
     {
         "id": 2,
         "name": "Kate Meersman",
-        "image": "/images/testing123.png",
+        "image": "/images/km.png",
         "content": "asdf",
         "link": "https://www.linkedin.com/in/kate-meersman-2a66a2155/"
     }, 
     {
         "id": 3,
         "name": "Mike Zlotkowski",
-        "image": "/images/testing123.png",
-        "content": "asdf",
+        "image": "/images/mz.png",
+        "content": "Web Developer, Business Consultant, I strive to grow within the industry and push myself to be on the cutting edge of technology.",
         "link": "https://www.linkedin.com/in/mike-zlotkowski/"
     }, 
     {
         "id": 4,
         "name": "Marcus Travis",
-        "image": "/images/testing123.png",
+        "image": "/images/mt.png",
         "content": "asdf",
         "link": "https://www.linkedin.com/in/marcustravis/" 
     }
