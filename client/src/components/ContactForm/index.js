@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-materialize";
-import contactUs from "../../images/contactUs.png"
+import contactUS from "../../images/contactUS.png";
 import "./style.css";
 
 export default class ContactForm extends React.Component {
@@ -18,15 +18,13 @@ export default class ContactForm extends React.Component {
       <div className="container center">
         <div className="row">
           <div className="col s12 form z-depth-5">
-          <img className="contact" src={contactUs} />
+            <img className="contact" src={contactUS} />
             <form
               onSubmit={this.submitForm}
               action="https://formspree.io/moqkpgwy"
               method="POST"
             >
-              <span>
-                
-              </span>
+              <span></span>
               <label>Email:</label>
               <input type="email" name="email" />
               <label>Message:</label>
@@ -34,9 +32,14 @@ export default class ContactForm extends React.Component {
               {status === "SUCCESS" ? (
                 <p>Thanks!</p>
               ) : (
-                <Button className="submit" node="button" type="submit" waves="light">
-            Submit
-          </Button>
+                <Button
+                  className="submit"
+                  node="button"
+                  type="submit"
+                  waves="light"
+                >
+                  Submit
+                </Button>
               )}
               {status === "ERROR" && <p>Ooops! There was an error.</p>}
             </form>
