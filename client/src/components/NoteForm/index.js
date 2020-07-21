@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-materialize";
 import API from "../../utils/API";
 
 class Form extends Component {
@@ -32,8 +33,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col s12">
+      
           <form onSubmit={this.saveNote}>
             <label htmlFor="topic">Topic</label>
             <input
@@ -60,12 +60,11 @@ class Form extends Component {
               name="body"
               onChange={this.handleChange}
             ></textarea>
-            <button type="submit" onClick={this.saveNote}>
+            <Button className="submit" node="button" type="submit" waves="light" onClick={this.saveNote}>
               Create Note
-            </button>
+            </Button>
           </form>
-        </div>
-      </div>
+        
     );
   }
 }

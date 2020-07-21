@@ -21,10 +21,10 @@
   width: 70%;
 }
 
-.aboutChoogleFam {
+/* .aboutChoogleFam {
   height: auto;
   width: 50%;
-}
+} */
 
 @media (max-width: 991px) {
   .container {
