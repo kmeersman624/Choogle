@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-materialize";
-import contactUs from "../../images/contactUs.png"
+import contactUs from "../../images/contactUS.png"
 import "./style.css";
 
 export default class ContactForm extends React.Component {
