@@ -27,9 +27,9 @@ function Header() {
         }
         id="mobile-nav"
         menuIcon={
-          <a className="btn-floating btn-large pulse">
+          <span className="btn-floating btn-large pulse" href="btn">
             <i className="material-icons">apps</i>
-          </a>
+         </span>
         }
         options={{
           draggable: true,
@@ -58,7 +58,7 @@ function Header() {
             <Link className="waves-effect waves-teal btn-flat" to="/notes">
               <font styles="vertical-align: inherit;">Notes</font>
             </Link>
-            <a className="waves-effect waves-teal btn-flat" onClick={logout}>
+            <a className="waves-effect waves-teal btn-flat" href="logout" onClick={logout}>
               <font styles="vertical-align: inherit;">Logout</font>
             </a>
           </>
