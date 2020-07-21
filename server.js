@@ -9,9 +9,11 @@ const isAuthenticated = require("./config/middleware/isAuthenticated");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/notesdb";
+
 // mongoose connection
 mongoose
-  .connect("mongodb://localhost/notesdb", {
+  .connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

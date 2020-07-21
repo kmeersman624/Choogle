@@ -1,7 +1,7 @@
 .grey.darken-1.card {
   font-size: medium !important;
   background-color: rgb(188, 182, 182) !important;
-  
+  overflow: auto;
 }
 
 .card-title {
