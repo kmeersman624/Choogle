@@ -16,7 +16,7 @@ router.post("/login", passport.authenticate("local"), function (req, res) {
 });
 
 // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
-// how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
+// how we configured our Mongoose User Model. If the user is created successfully, proceed to log the user in,
 // otherwise send back an error
 router.post("/signup", function (req, res) {
   db.User.create({
@@ -40,7 +40,7 @@ router.post("/signup", function (req, res) {
 // Route for logging user out
 router.get("/logout", function (req, res) {
   req.logout();
-  res.redirect("/login");
+  res.send("Logged out");
 });
 
 // Route for getting some data about our user to be used client side
@@ -50,8 +50,7 @@ router.get("/user_data", function (req, res) {
     res.json({});
   } else {
     // Otherwise send back the user's email and id
-    // Sending back a password, even a hashed password, isn't a good idea
-    res.json({
+       res.json({
       email: req.user.email,
       id: req.user.id,
     });

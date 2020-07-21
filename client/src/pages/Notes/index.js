@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import Form from "../../components/NoteForm";
 import NoteCard from "../../components/NoteCard";
 import API from "../../utils/API";
@@ -36,8 +36,8 @@ class Notes extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Notes
+export default Notes;

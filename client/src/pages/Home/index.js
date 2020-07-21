@@ -13,7 +13,7 @@ export class Home extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <div className="container center">
           <Tilt
           direction="row"
@@ -22,7 +22,6 @@ export class Home extends Component {
           >
             <img className="mainlogo" src={logo} alt={logo}/>
           </Tilt>
-        </div>
           <Grid
             container
             direction="row"
@@ -36,7 +35,7 @@ export class Home extends Component {
               <Grid
               key={helpfulLinks.id}
               item 
-              xs={12} sm={6} md={4} lg={4} xl={3}
+              xs={12} sm={6} md={6} lg={4} xl={3}
               >
                 <ChoogleCard 
                   id={helpfulLink.id}
@@ -49,7 +48,8 @@ export class Home extends Component {
               </Grid>
             ))}
           </Grid>
-      </div>
+        </div>
+      </>
     );
   }
 }

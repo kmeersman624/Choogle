@@ -20,8 +20,14 @@ class Form extends Component {
       url: this.state.url,
       body: this.state.body,
     };
-    API.saveNote(noteObj)
-      .then(() => { this.props.loadNotes() })
+    API.saveNote(noteObj).then(() => {
+      this.props.loadNotes();
+      this.setState({
+        topic: "",
+        url: "",
+        body: "",
+      });
+    });
   };
 
   render() {
@@ -32,13 +38,16 @@ class Form extends Component {
             <label htmlFor="topic">Topic</label>
             <input
               type="text"
+              value={this.state.topic}
               placeholder="Enter your topic here"
               name="topic"
-              onChange={this.handleChange} />
+              onChange={this.handleChange}
+            />
 
             <label htmlFor="url">URL</label>
             <input
               type="text"
+              value={this.state.url}
               placeholder="Enter your url here"
               name="url"
               onChange={this.handleChange}
@@ -46,18 +55,18 @@ class Form extends Component {
             <label htmlFor="body">Body</label>
             <textarea
               type="text"
+              value={this.state.body}
               placeholder="Enter your notes here"
               name="body"
               onChange={this.handleChange}
             ></textarea>
-            <button type="submit" onClick={this.saveNote}>Create Note</button>
+            <button type="submit" onClick={this.saveNote}>
+              Create Note
+            </button>
           </form>
         </div>
       </div>
-
-
-    )
-
+    );
   }
 }
 
