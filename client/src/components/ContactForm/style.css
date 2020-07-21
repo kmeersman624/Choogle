@@ -5,7 +5,12 @@
   margin-top: 200px;
 }
 
-.marginTopBottom {
+.submit {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.contact{
+  height: 115px;
+  
 }
