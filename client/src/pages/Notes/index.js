@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Form from "../../components/NoteForm";
 import NoteCard from "../../components/NoteCard";
 import API from "../../utils/API";
+import "./styles.css";
 
 class Notes extends Component {
   state = {
@@ -25,8 +26,10 @@ class Notes extends Component {
 
   render() {
     return (
-      <div>
+      
         <div classname="container center">
+          <div className="row">
+            <div className="col s12 notes z-depth-5">
           <Form loadNotes={() => this.loadNotes()} />
           <div className="row">
             <NoteCard
@@ -34,8 +37,11 @@ class Notes extends Component {
               loadNotes={() => this.loadNotes()}
             />
           </div>
+
+            </div>
+          </div>
         </div>
-      </div>
+      
     );
   }
 }

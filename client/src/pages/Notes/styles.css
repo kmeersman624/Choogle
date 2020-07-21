@@ -1,0 +1,10 @@
+.notes{
+    align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 150px;
+}
+
+.col.s12{
+  align-items: center;
+}

@@ -32,8 +32,7 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col s12">
+      
           <form onSubmit={this.saveNote}>
             <label htmlFor="topic">Topic</label>
             <input
@@ -64,8 +63,7 @@ class Form extends Component {
               Create Note
             </button>
           </form>
-        </div>
-      </div>
+        
     );
   }
 }
