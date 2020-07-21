@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Icon } from "react-materialize";
+import { Navbar } from "react-materialize";
 import logo from "../../images/Choogle.png";
 import "./style.css";
 import API from "../../utils/API";
@@ -27,8 +27,8 @@ function Header() {
         }
         id="mobile-nav"
         menuIcon={
-          <a class="btn-floating btn-large pulse">
-            <i class="material-icons">apps</i>
+          <a className="btn-floating btn-large pulse">
+            <i className="material-icons">apps</i>
           </a>
         }
         options={{
