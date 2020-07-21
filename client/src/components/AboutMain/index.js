@@ -16,7 +16,7 @@ export class AboutMain extends Component {
         return (
             <>
                 <div className="row center">
-                    <span><img className="aboutHeader aboutChoogle" alt="about img" src={about} /></span>
+                    <span><img className="aboutHeader" alt="about img" src={about} /></span>
                 </div>
                 <div className="row center">
                     <div className="col s12 padding">
@@ -37,7 +37,7 @@ export class AboutMain extends Component {
                         </h5>
                         <br/>
                         <div className="row center">
-                            <span><img className="aboutHeader aboutChoogleFam" src={ChoogleFam} alt={ChoogleFam} /></span>
+                            <span><img className="aboutChoogleFam" src={ChoogleFam} alt={ChoogleFam} /></span>
                         </div>
                     </div>
                 </div>

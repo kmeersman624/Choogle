@@ -22,7 +22,7 @@ function Header() {
         alignLinks="right"
         brand={
           <Link className="brand-logo logoMargin" to="/">
-            <img src={logo} alt={logo} height="60px" width="auto" alt="" />
+            <img src={logo} alt={logo} height="50px" width="auto" alt="" />
           </Link>
         }
         id="mobile-nav"

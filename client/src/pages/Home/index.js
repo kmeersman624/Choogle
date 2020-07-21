@@ -5,6 +5,7 @@ import logo from "../../images/chooglelogo.png";
 import 'materialize-css';
 import ChoogleCard from '../../components/ChoogleCard';
 import helpfulLinks from "../../helpfulLinks.json";
+import "./styles.css";
 
 export class Home extends Component {
   state = {
