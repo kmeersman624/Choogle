@@ -29,16 +29,6 @@ class NoteCard extends Component {
               actions={[
                 <Button
                   node="a"
-                  small
-                  style={{
-                    marginRight: "5px",
-                  }}
-                  waves="light"
-                >
-                  Update
-                </Button>,
-                <Button
-                  node="a"
                   onClick={() => this.deleteNote(note._id)}
                   small
                   style={{
