@@ -7,7 +7,7 @@ import API from "../../utils/API";
 import { useUserContext } from "../../utils/UserContext";
 
 function Header() {
-  const { setUser } = useUserContext();
+  const { user, setUser } = useUserContext();
   const logout = () => {
     API.logout().then(function (res) {
       console.log(res);
@@ -43,24 +43,30 @@ function Header() {
           preventScrolling: true,
         }}
       >
-        <Link className="waves-effect waves-teal btn-flat" to="/">
-          <font styles="vertical-align: inherit;">Home</font>
-        </Link>
-
-        <Link className="waves-effect waves-teal btn-flat" to="/about">
-          <font styles="vertical-align: inherit;">About</font>
-        </Link>
-        <Link className="waves-effect waves-teal btn-flat" to="/notes">
-          <font styles="vertical-align: inherit;">Notes</font>
-        </Link>
-
         <Link className="waves-effect waves-teal btn-flat" to="/contact">
           <font styles="vertical-align: inherit;">Contact</font>
         </Link>
 
-        <a className="waves-effect waves-teal btn-flat" onClick={logout}>
-          <font styles="vertical-align: inherit;">Logout</font>
-        </a>
+        {user.email ? (
+          <>
+            <Link className="waves-effect waves-teal btn-flat" to="/">
+              <font styles="vertical-align: inherit;">Home</font>
+            </Link>
+            <Link className="waves-effect waves-teal btn-flat" to="/about">
+              <font styles="vertical-align: inherit;">About</font>
+            </Link>
+            <Link className="waves-effect waves-teal btn-flat" to="/notes">
+              <font styles="vertical-align: inherit;">Notes</font>
+            </Link>
+            <a className="waves-effect waves-teal btn-flat" onClick={logout}>
+              <font styles="vertical-align: inherit;">Logout</font>
+            </a>
+          </>
+        ) : (
+          <Link className="waves-effect waves-teal btn-flat" to="login">
+            <font styles="vertical-align: inherit;">Login</font>
+          </Link>
+        )}
       </Navbar>
     </>
   );
