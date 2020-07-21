@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button } from "react-materialize";
 import API from "../../utils/API";
 
 class Form extends Component {
@@ -59,9 +60,9 @@ class Form extends Component {
               name="body"
               onChange={this.handleChange}
             ></textarea>
-            <button type="submit" onClick={this.saveNote}>
+            <Button className="submit" node="button" type="submit" waves="light" onClick={this.saveNote}>
               Create Note
-            </button>
+            </Button>
           </form>
         
     );

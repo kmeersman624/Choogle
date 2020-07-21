@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Form from "../../components/NoteForm";
 import NoteCard from "../../components/NoteCard";
 import API from "../../utils/API";
+import notes from "../../images/NotesLink.png"
 import "./styles.css";
 
 class Notes extends Component {
@@ -29,7 +30,8 @@ class Notes extends Component {
       
         <div classname="container center">
           <div className="row">
-            <div className="col s12 notes z-depth-5">
+            <div className="col s8 notes z-depth-5">
+              <img classname="notes2" src={notes} />
           <Form loadNotes={() => this.loadNotes()} />
           <div className="row">
             <NoteCard
