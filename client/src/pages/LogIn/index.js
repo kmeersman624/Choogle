@@ -31,7 +31,7 @@ function LogIn(props) {
     <div className="container center">
       <Row>
         <Col className="s12 m6" />
-        <form className="loginform" onSubmit={submitHandler}>
+        <form className="loginform z-depth-5" onSubmit={submitHandler}>
           <img className="signin" alt="login" src={login} />
           <input
             type="text"
