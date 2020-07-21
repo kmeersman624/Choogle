@@ -40,7 +40,7 @@ router.post("/signup", function (req, res) {
 // Route for logging user out
 router.get("/logout", function (req, res) {
   req.logout();
-  res.redirect("/login");
+  res.send("Logged out");
 });
 
 // Route for getting some data about our user to be used client side
