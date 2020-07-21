@@ -22,7 +22,7 @@ class Form extends Component {
     };
     API.saveNote(noteObj).then(() => {
       this.props.loadNotes();
-    });
+    })
   };
 
   render() {
