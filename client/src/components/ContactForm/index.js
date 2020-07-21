@@ -19,7 +19,7 @@ export default class ContactForm extends React.Component {
       <div className="container center">
         <div className="row">
           <div className="col s12 form z-depth-5">
-            <img className="contact" src={contactUS} />
+            <img className="contact" alt="" src={contactUS} />
             <form
               onSubmit={this.submitForm}
               action="https://formspree.io/moqkpgwy"

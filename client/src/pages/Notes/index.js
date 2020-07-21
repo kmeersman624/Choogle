@@ -30,7 +30,7 @@ class Notes extends Component {
       <div className="container">
         <div className="row center">
           <div className="col s12 notes z-depth-5">
-            <img className="notes2" src={notes} />
+            <img className="notes2" alt="" src={notes} />
             <Form loadNotes={() => this.loadNotes()} />
           </div>
         </div>
