@@ -38,15 +38,11 @@ app.use(morgan("dev"));
 // Register route
 app.use(require("./routes"));
 
-// app.get("/ping", isAuthenticated, function (req, res) {
-//   res.send("Made it!");
-// });
-
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
-  // app.get("*", function (req, res) {
-  //   res.sendFile(path.join(__dirname, "client/build/index.html"));
-  // });
+  app.get("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "client/build/index.html"));
+  });
 }
 
 app.listen(PORT, () => console.log("App listening on port:" + PORT));
