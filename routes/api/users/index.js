@@ -16,7 +16,7 @@ router.post("/login", passport.authenticate("local"), function (req, res) {
 });
 
 // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
-// how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
+// how we configured our Mongoose User Model. If the user is created successfully, proceed to log the user in,
 // otherwise send back an error
 router.post("/signup", function (req, res) {
   db.User.create({
