@@ -13,6 +13,7 @@
   * [Proposal](#proposal)
   * [Usage](#usage)
   * [Contributing](#contributing)
+  * [Presentation](#presentation)
   * [Challenges](#challenges) 
   * [Future Development](#future_development)
   * [License](#license)
@@ -40,6 +41,9 @@
   ## Contributing
   Kate Meersman, Marcus Travis, Danny Molina-Power, Mike Zlotkowski
 
+  ## Presentation
+  Click here for link to powerpoint presentation of choogle: https://docs.google.com/presentation/d/1ZkOiO29uqk8AO9h3KzsBXq9i_lHfINH-4mZVT5RO_j4/edit?usp=sharing
+  
   ## Challenges
   * We had to work through 401 errors from Passport when trying to authenticate the user email and password.  We had used code from a previous project that was using Sequelize instead of Mongoose with Passport.  We needed to go through code and make sure everything was set up to work correctly with Mongoose which took a lot longer than expected.
   * Learning and working with Materialize as CSS framework
