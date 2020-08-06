@@ -6,6 +6,7 @@ import 'materialize-css';
 import ChoogleCard from '../../components/ChoogleCard';
 import helpfulLinks from "../../helpfulLinks.json";
 import "./styles.css";
+import SearchBar from "../../components/SearchBar";
 
 export class Home extends Component {
   state = {
@@ -23,6 +24,7 @@ export class Home extends Component {
           >
             <img className="mainlogo" src={logo} alt={logo}/>
           </Tilt>
+          <SearchBar/>
           <Grid
             container
             direction="row"

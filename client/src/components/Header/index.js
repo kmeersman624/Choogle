@@ -5,6 +5,7 @@ import logo from "../../images/Choogle.png";
 import "./style.css";
 import API from "../../utils/API";
 import { useUserContext } from "../../utils/UserContext";
+import SearchBar from "../SearchBar";
 
 function Header() {
   const { user, setUser } = useUserContext();
