@@ -44,9 +44,7 @@ function Header() {
           preventScrolling: true,
         }}
       >
-        <Link className="waves-effect waves-teal btn-flat" to="/contact">
-          <font styles="vertical-align: inherit;">Contact</font>
-        </Link>
+
 
         {user.email ? (
           <>
@@ -73,6 +71,10 @@ function Header() {
             <font styles="vertical-align: inherit;">Login</font>
           </Link>
         )}
+
+        <Link className="waves-effect waves-teal btn-flat" to="/contact">
+          <font styles="vertical-align: inherit;">Contact</font>
+        </Link>
             <div class="nav-wrapper">
               <form>
                 <div class="input-field">
