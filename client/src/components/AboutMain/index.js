@@ -5,6 +5,7 @@ import about from "../../images/AboutLink.png";
 import ChoogleFam from "../../images/ChoogleFam.png";
 import ChoogleCard from "../../components/ChoogleCard";
 import teamProfiles from "../../teamProfiles.json";
+import Blog from "../../components/Blog";
 
 export class AboutMain extends Component {
   state = {
@@ -89,6 +90,7 @@ export class AboutMain extends Component {
             </Grid>
           ))}
         </Grid>
+        <Blog />
       </>
     );
   }
