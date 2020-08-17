@@ -111,7 +111,7 @@ export class AboutMain extends Component {
             <br />
             Do some research, check out some of your favorite brands, see what works for them. What websites do you visit that draw your attention, and take note of what seems to make you dive further into knowing more about the details or information on a company, product based site, or personal page.
             </h6>
-            <h6 className="textPadding">Published By Mike Zlotkowski 8/17/2020</h6>
+            <h5 className="textPadding">Published By Mike Zlotkowski 8/17/2020</h5>
           </div>
         </div>
         <br />
