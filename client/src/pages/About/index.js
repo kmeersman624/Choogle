@@ -1,6 +1,6 @@
 import React from "react";
 import AboutMain from "../../components/AboutMain/index.js";
-
+import Blog from "../../components/Blog";
 
 // import { Chip } from "react-materialize";
 
