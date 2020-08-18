@@ -1,3 +1,13 @@
 .inline{
     display: inline-block !important;
 }
+
+.searchBorder{
+    align-items: center;
+    height: auto;
+    width: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 10px;
+}
