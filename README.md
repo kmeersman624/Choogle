@@ -1,8 +1,7 @@
 # Choogle
 
   ## Description
-  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding.  The user will have access to favorite cheatsheets from chooglers on home page, in addition to being able to save their own URLs and notes on the notes page. Developers can use Choogle as a place to store links and documents for quick reference in one convenient location.
-  
+  User can utilize Choogle as a secure location to save favorite documents and cheat sheets for coding in one convenient location.  The user will have access to developers favorite cheatsheets from chooglers on home page, in addition to being able to save their own URLs and notes on the notes page. Users can also use the google search bar on the home page for quick access to search the web.   
 
   Link to deployed application: https://chooglefoo.herokuapp.com/
 
@@ -50,9 +49,7 @@
   * Working with React.js and MERN as this was a first project for our team incorporating React, Mongo, Express, Node together.
 
   ## Future Development
-  * Add a custom google search bar for users to search google directly through our site for documents and resources
-  * Turn web page into a PWA so that it is accesible offline
-  * Add a blog
+  * Change user authentication from passport to AWS 
   * Add ability for user to create a card on home page out of a saved note
 
   ## License
