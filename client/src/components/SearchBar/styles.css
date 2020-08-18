@@ -1,13 +1,25 @@
-.inline{
-    display: inline-block !important;
+.inline {
+  display: inline-block !important;
 }
 
-.searchBorder{
-    align-items: center;
-    height: auto;
-    width: 50%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: lightgray;
-    border-radius: 10px;
+.searchbox {
+  margin-top: 30px !important;
+  border: 2px solid rgb(158, 85, 158) !important;
+  border-radius: 80px !important;
+  padding: 0px !important;
+}
+
+.search {
+  border-radius: 25px !important;
+  padding: 0 0 0 10px !important;
+  margin: 0px 0px 0px 0px !important;
+  height: 40px !important;
+  border: none !important;
+}
+
+.submit2 {
+  margin: 0px 0px 0px 20px !important;
+  height: 45px !important;
+  border-radius: 25px !important;
+  overflow: hidden;
 }
