@@ -18,7 +18,7 @@
     "react-materialize": "^3.9.2",
     "react-parallax-tilt": "^1.4.59",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-spring": "^8.0.27"
   },
   "scripts": {
